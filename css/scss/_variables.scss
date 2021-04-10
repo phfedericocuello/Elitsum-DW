@@ -1,0 +1,13 @@
+// %grid-index {
+//     display: grid;
+//     grid-template-columns: 25% 25% 25% 25%;
+//     grid-template-rows: 1% 24.5% 15% 15% 20% 20% 5%;
+//     grid-template-areas: "header header header header" "carrusel carrusel carrusel carrusel" "yo yo yo yo" "resumen resumen resumen resumen" "boton boton boton boton" "trabajos trabajos trabajos trabajos" "clientes clientes clientes clientes" "footer footer footer footer";
+// }
+%flex {
+    display: flex;
+    margin: 0;
+    flex-flow: column;
+}
+
+$celeste: #ae8cee;
