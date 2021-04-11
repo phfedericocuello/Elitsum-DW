@@ -29,21 +29,35 @@
             }
         }
     }
-    .body_contenido {
+    .body_logo {
         flex-basis: 33.3%;
         display: grid;
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 50% 50%;
-        grid-template-areas: "nombres marca explicacion" ". . .";
-        margin-top: 10%;
-        .contenido_nombres {
+        grid-template-areas: "nombres marca exp" "nombres marca exp";
+        margin-top: 5%;
+        justify-items: center;
+        .logo_nombres {
             grid-area: nombres;
+            .nombres_elit {
+                margin-left: 0%;
+                text-align: center;
+            }
+            .nombres_mas {
+                margin-left: 40%;
+            }
         }
-        .contenido_marca {
+        .logo_marca {
             grid-area: marca;
+            margin-top: 15%;
         }
-        .contenido_explicacion {
-            grid-area: explicacion;
+        .logo_explicacion {
+            grid-area: exp;
+            .explicacion_texto {
+                margin-top: 5%;
+                margin-right: 25%;
+                margin-left: 25%;
+            }
         }
     }
     .body_columnas-about {
@@ -53,20 +67,21 @@
         flex-direction: row;
         width: 100%;
         margin-left: 1.7%;
-        margin-top: 10%;
+        margin-top: 15%;
+        margin-bottom: 5%;
         img {
             height: 40%;
             width: 40%;
-            margin-left: 10%;
-            margin-bottom: 10%;
+            margin-left: 5%;
+            margin-bottom: 5%;
         }
         .columnas_vision {
             flex-basis: 25%;
-            margin-left: 15%;
+            margin-left: 16%;
             width: 70%;
-            .uno_texto {
+            .vision_texto {
                 text-align: center;
-                width: 70%;
+                width: 50%;
             }
             img {
                 padding-left: 10%;
@@ -74,16 +89,16 @@
         }
         .columnas_historia {
             flex-basis: 25%;
-            .dos_texto {
+            .historia_texto {
                 text-align: center;
-                width: 70%;
+                width: 50%;
             }
         }
         .columnas_valores {
             flex-basis: 25%;
-            .tres_texto {
+            .valores_texto {
                 text-align: center;
-                width: 70%;
+                width: 50%;
             }
         }
     }

@@ -567,7 +567,7 @@ body .portfolio_trabajos .cuatro_texto {
   margin-top: 2%;
 }
 
-.body .body_contenido {
+.body .body_logo {
   -ms-flex-preferred-size: 33.3%;
       flex-basis: 33.3%;
   display: -ms-grid;
@@ -576,26 +576,46 @@ body .portfolio_trabajos .cuatro_texto {
       grid-template-columns: 33% 33% 33%;
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
-      grid-template-areas: "nombres marca explicacion" ". . .";
-  margin-top: 10%;
+      grid-template-areas: "nombres marca exp" "nombres marca exp";
+  margin-top: 5%;
+  justify-items: center;
 }
 
-.body .body_contenido .contenido_nombres {
+.body .body_logo .logo_nombres {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: nombres;
 }
 
-.body .body_contenido .contenido_marca {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: marca;
+.body .body_logo .logo_nombres .nombres_elit {
+  margin-left: 0%;
+  text-align: center;
 }
 
-.body .body_contenido .contenido_explicacion {
+.body .body_logo .logo_nombres .nombres_mas {
+  margin-left: 40%;
+}
+
+.body .body_logo .logo_marca {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: marca;
+  margin-top: 15%;
+}
+
+.body .body_logo .logo_explicacion {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
-  grid-area: explicacion;
+  grid-area: exp;
+}
+
+.body .body_logo .logo_explicacion .explicacion_texto {
+  margin-top: 5%;
+  margin-right: 25%;
+  margin-left: 25%;
 }
 
 .body .body_columnas-about {
@@ -611,26 +631,27 @@ body .portfolio_trabajos .cuatro_texto {
           flex-direction: row;
   width: 100%;
   margin-left: 1.7%;
-  margin-top: 10%;
+  margin-top: 15%;
+  margin-bottom: 5%;
 }
 
 .body .body_columnas-about img {
   height: 40%;
   width: 40%;
-  margin-left: 10%;
-  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
 .body .body_columnas-about .columnas_vision {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
-  margin-left: 15%;
+  margin-left: 16%;
   width: 70%;
 }
 
-.body .body_columnas-about .columnas_vision .uno_texto {
+.body .body_columnas-about .columnas_vision .vision_texto {
   text-align: center;
-  width: 70%;
+  width: 50%;
 }
 
 .body .body_columnas-about .columnas_vision img {
@@ -642,9 +663,9 @@ body .portfolio_trabajos .cuatro_texto {
       flex-basis: 25%;
 }
 
-.body .body_columnas-about .columnas_historia .dos_texto {
+.body .body_columnas-about .columnas_historia .historia_texto {
   text-align: center;
-  width: 70%;
+  width: 50%;
 }
 
 .body .body_columnas-about .columnas_valores {
@@ -652,8 +673,8 @@ body .portfolio_trabajos .cuatro_texto {
       flex-basis: 25%;
 }
 
-.body .body_columnas-about .columnas_valores .tres_texto {
+.body .body_columnas-about .columnas_valores .valores_texto {
   text-align: center;
-  width: 70%;
+  width: 50%;
 }
 /*# sourceMappingURL=estilosScss.css.map */
