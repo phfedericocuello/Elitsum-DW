@@ -81,6 +81,7 @@
   -ms-flex-preferred-size: 5%;
       flex-basis: 5%;
   background-color: black;
+  bottom: 0;
 }
 
 .body_footer .footer_texto {
@@ -441,8 +442,8 @@ body .portfolio_trabajos {
   height: 20%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 21.3% 5% 21.3% 5% 21.3% 5% 21.3%;
-      grid-template-rows: 21.3% 5% 21.3% 5% 21.3% 5% 21.3%;
+  -ms-grid-rows: 21.3% 5% 21.3% 5% 21.3% 5% 21.3% 5%;
+      grid-template-rows: 21.3% 5% 21.3% 5% 21.3% 5% 21.3% 5%;
   -ms-grid-columns: 45% 10% 45%;
       grid-template-columns: 45% 10% 45%;
       grid-template-areas: "uno_imagen . uno_texto" ". . ." "dos_texto . dos_imagen" ". . ." "tres_imagen . tres_texto" ". . ." "cuatro_texto . cuatro_imagen";
@@ -564,5 +565,95 @@ body .portfolio_trabajos .cuatro_texto {
 
 .body .body_carrusel .carousel .carousel-item .carousel-caption p {
   margin-top: 2%;
+}
+
+.body .body_contenido {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "nombres marca explicacion" ". . .";
+  margin-top: 10%;
+}
+
+.body .body_contenido .contenido_nombres {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nombres;
+}
+
+.body .body_contenido .contenido_marca {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: marca;
+}
+
+.body .body_contenido .contenido_explicacion {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: explicacion;
+}
+
+.body .body_columnas-about {
+  margin-top: 5%;
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-left: 1.7%;
+  margin-top: 10%;
+}
+
+.body .body_columnas-about img {
+  height: 40%;
+  width: 40%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.body .body_columnas-about .columnas_vision {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  margin-left: 15%;
+  width: 70%;
+}
+
+.body .body_columnas-about .columnas_vision .uno_texto {
+  text-align: center;
+  width: 70%;
+}
+
+.body .body_columnas-about .columnas_vision img {
+  padding-left: 10%;
+}
+
+.body .body_columnas-about .columnas_historia {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.body .body_columnas-about .columnas_historia .dos_texto {
+  text-align: center;
+  width: 70%;
+}
+
+.body .body_columnas-about .columnas_valores {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.body .body_columnas-about .columnas_valores .tres_texto {
+  text-align: center;
+  width: 70%;
 }
 /*# sourceMappingURL=estilosScss.css.map */

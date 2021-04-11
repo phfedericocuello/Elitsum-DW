@@ -29,4 +29,62 @@
             }
         }
     }
+    .body_contenido {
+        flex-basis: 33.3%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "nombres marca explicacion" ". . .";
+        margin-top: 10%;
+        .contenido_nombres {
+            grid-area: nombres;
+        }
+        .contenido_marca {
+            grid-area: marca;
+        }
+        .contenido_explicacion {
+            grid-area: explicacion;
+        }
+    }
+    .body_columnas-about {
+        margin-top: 5%;
+        flex-basis: 15%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 1.7%;
+        margin-top: 10%;
+        img {
+            height: 40%;
+            width: 40%;
+            margin-left: 10%;
+            margin-bottom: 10%;
+        }
+        .columnas_vision {
+            flex-basis: 25%;
+            margin-left: 15%;
+            width: 70%;
+            .uno_texto {
+                text-align: center;
+                width: 70%;
+            }
+            img {
+                padding-left: 10%;
+            }
+        }
+        .columnas_historia {
+            flex-basis: 25%;
+            .dos_texto {
+                text-align: center;
+                width: 70%;
+            }
+        }
+        .columnas_valores {
+            flex-basis: 25%;
+            .tres_texto {
+                text-align: center;
+                width: 70%;
+            }
+        }
+    }
 }
