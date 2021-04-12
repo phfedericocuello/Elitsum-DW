@@ -17,8 +17,10 @@
     top: 0;
     background-color: white;
     z-index: 10000;
-    img {
+    .logo {
         flex-basis: 10%;
+        width: 12%;
+        height: 100%;
     }
     nav {
         flex-basis: 100%;

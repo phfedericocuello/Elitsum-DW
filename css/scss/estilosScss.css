@@ -7,6 +7,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  background-image: url(../../media/1.png);
 }
 
 * {
@@ -32,9 +33,11 @@
   z-index: 10000;
 }
 
-.body_header img {
+.body_header .logo {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
+  width: 12%;
+  height: 100%;
 }
 
 .body_header nav {
@@ -118,6 +121,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  background-image: url(../../media/1.png);
 }
 
 .body {
@@ -374,6 +378,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  background-image: url(../../media/1.png);
 }
 
 .body {
@@ -385,6 +390,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  background-image: url(../../media/1.png);
 }
 
 body {
@@ -528,6 +534,7 @@ body .portfolio_trabajos .cuatro_texto {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  background-image: url(../../media/1.png);
 }
 
 .body {
@@ -577,7 +584,7 @@ body .portfolio_trabajos .cuatro_texto {
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
       grid-template-areas: "nombres marca exp" "nombres marca exp";
-  margin-top: 5%;
+  margin-top: 4%;
   justify-items: center;
 }
 
@@ -602,7 +609,23 @@ body .portfolio_trabajos .cuatro_texto {
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: marca;
-  margin-top: 15%;
+  margin-top: 5%;
+}
+
+.body .body_logo .logo_marca .logo {
+  height: 100%;
+  width: 20%;
+  margin-left: 42%;
+}
+
+.body .body_logo .logo_marca p {
+  margin-left: 33%;
+  margin-top: 3%;
+}
+
+.body .body_logo .logo_marca .marca_titulo {
+  margin-top: 1%;
+  margin-left: 45%;
 }
 
 .body .body_logo .logo_explicacion {
@@ -613,7 +636,7 @@ body .portfolio_trabajos .cuatro_texto {
 }
 
 .body .body_logo .logo_explicacion .explicacion_texto {
-  margin-top: 5%;
+  margin-top: 10%;
   margin-right: 25%;
   margin-left: 25%;
 }
@@ -638,43 +661,61 @@ body .portfolio_trabajos .cuatro_texto {
 .body .body_columnas-about img {
   height: 40%;
   width: 40%;
-  margin-left: 5%;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .body .body_columnas-about .columnas_vision {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
-  margin-left: 16%;
-  width: 70%;
+  margin-left: 10%;
+  background-color: white;
 }
 
 .body .body_columnas-about .columnas_vision .vision_texto {
   text-align: center;
-  width: 50%;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .body .body_columnas-about .columnas_vision img {
-  padding-left: 10%;
+  margin-left: 28%;
 }
 
 .body .body_columnas-about .columnas_historia {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
+  background-color: white;
+  margin-left: 2%;
 }
 
 .body .body_columnas-about .columnas_historia .historia_texto {
   text-align: center;
-  width: 50%;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.body .body_columnas-about .columnas_historia img {
+  margin-left: 30%;
 }
 
 .body .body_columnas-about .columnas_valores {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
+  background-color: white;
+  margin-left: 2%;
 }
 
 .body .body_columnas-about .columnas_valores .valores_texto {
   text-align: center;
-  width: 50%;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.body .body_columnas-about .columnas_valores img {
+  margin-left: 30%;
 }
 /*# sourceMappingURL=estilosScss.css.map */
