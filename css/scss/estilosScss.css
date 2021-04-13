@@ -278,11 +278,11 @@ a {
       flex-basis: 20%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 40% 10% 40%;
-      grid-template-rows: 40% 10% 40%;
+  -ms-grid-rows: 70% 30%;
+      grid-template-rows: 70% 30%;
   -ms-grid-columns: 20% 5% 20% 5% 20% 5% 20%;
       grid-template-columns: 20% 5% 20% 5% 20% 5% 20%;
-      grid-template-areas: "t1 . t2 . t3 . t4 " ". . . . . . ." "t5 . t6 . t7 . t8";
+      grid-template-areas: "t1 . t2 . t3 . t4 " ". . . . . . .";
   width: 60%;
   margin-left: 21.7%;
   margin-top: 7%;
@@ -315,35 +315,6 @@ a {
   -ms-grid-row: 1;
   -ms-grid-column: 7;
   grid-area: t4;
-  margin-top: 5%;
-}
-
-.body .body_trabajos .trabajos_5 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: t5;
-  margin-top: 5%;
-}
-
-.body .body_trabajos .trabajos_6 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: t6;
-  margin-top: 5%;
-}
-
-.body .body_trabajos .trabajos_7 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-  grid-area: t7;
-  margin-top: 5%;
-}
-
-.body .body_trabajos .trabajos_8 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 7;
-  grid-area: t8;
-  margin-top: 5%;
 }
 
 .body {
@@ -430,10 +401,6 @@ body .portfolio_trabajos {
   -ms-grid-columns: 45% 10% 45%;
       grid-template-columns: 45% 10% 45%;
       grid-template-areas: "uno_imagen . uno_texto" ". . ." "dos_texto . dos_imagen" ". . ." "tres_imagen . tres_texto" ". . ." "cuatro_texto . cuatro_imagen";
-}
-
-body .portfolio_trabajos img {
-  border-radius: 100%;
 }
 
 body .portfolio_trabajos .uno_imagen {
@@ -694,5 +661,95 @@ body .portfolio_trabajos .cuatro_texto {
 
 .body .body_columnas-about .columnas_valores img {
   margin-left: 30%;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background-image: url(../../media/1.png);
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+}
+
+.body .body_carrusel {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  z-index: 1;
+}
+
+.body .body_carrusel .carousel .carousel-item {
+  height: 500px;
+}
+
+.body .body_carrusel .carousel .carousel-item img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  top: 0;
+  min-height: 500px;
+}
+
+.body .body_carrusel .carousel .carousel-item .btn {
+  background-color: #ae8cee;
+}
+
+.body .body_carrusel .carousel .carousel-item .carousel-caption {
+  margin-bottom: 7%;
+  font-size: 150%;
+}
+
+.body .body_carrusel .carousel .carousel-item .carousel-caption p {
+  margin-top: 2%;
+}
+
+.body .contacto_formulario {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+  -ms-grid-rows: 25% 25% 25% 25%;
+      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-areas: ". name . Ln ." ". mail mail mail ." ". mensaje mensaje mensaje ." ". . . .";
+}
+
+.body .contacto_formulario .formulario_name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+  margin-top: 15%;
+}
+
+.body .contacto_formulario .formulario_lastname {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: Ln;
+  margin-top: 15%;
+}
+
+.body .contacto_formulario .formulario_email {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: mail;
+  margin-top: 15%;
+}
+
+.body .contacto_formulario .formulario_msj {
+  grid-area: msj;
+  margin-top: 15%;
+}
+
+.body .contacto_formulario label {
+  color: #ffffff;
 }
 /*# sourceMappingURL=estilosScss.css.map */

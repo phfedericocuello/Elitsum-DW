@@ -123,9 +123,9 @@
     .body_trabajos {
         flex-basis: 20%;
         display: grid;
-        grid-template-rows: 40% 10% 40%;
+        grid-template-rows: 70% 30%;
         grid-template-columns: 20% 5% 20% 5% 20% 5% 20%;
-        grid-template-areas: "t1 . t2 . t3 . t4 " ". . . . . . ." "t5 . t6 . t7 . t8";
+        grid-template-areas: "t1 . t2 . t3 . t4 " ". . . . . . .";
         width: 60%;
         margin-left: 21.7%;
         margin-top: 7%;
@@ -144,23 +144,6 @@
         }
         .trabajos_4 {
             grid-area: t4;
-            margin-top: 5%;
-        }
-        .trabajos_5 {
-            grid-area: t5;
-            margin-top: 5%;
-        }
-        .trabajos_6 {
-            grid-area: t6;
-            margin-top: 5%;
-        }
-        .trabajos_7 {
-            grid-area: t7;
-            margin-top: 5%;
-        }
-        .trabajos_8 {
-            grid-area: t8;
-            margin-top: 5%;
         }
     }
 }

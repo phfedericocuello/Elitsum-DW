@@ -43,9 +43,6 @@ body {
         grid-template-rows: 21.3% 5% 21.3% 5% 21.3% 5% 21.3% 5%;
         grid-template-columns: 45% 10% 45%;
         grid-template-areas: "uno_imagen . uno_texto" ". . ." "dos_texto . dos_imagen" ". . ." "tres_imagen . tres_texto" ". . ." "cuatro_texto . cuatro_imagen";
-        img {
-            border-radius: 100%;
-        }
         .uno_imagen {
             grid-area: uno_imagen;
             margin-left: 60%;
