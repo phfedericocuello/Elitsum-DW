@@ -1,57 +1,79 @@
-@import "variables";
-.body {
-    width: 100%;
-    height: 100%;
-    @extend %flex;
-    .body_carrusel {
-        flex-basis: 30%;
-        z-index: 1;
-        .carousel {
-            .carousel-item {
-                height: 500px;
-                img {
-                    position: absolute;
-                    object-fit: cover;
-                    left: 0;
-                    top: 0;
-                    min-height: 500px;
-                }
-                .btn {
-                    background-color: $celeste;
-                }
-                .carousel-caption {
-                    margin-bottom: 7%;
-                    font-size: 150%;
-                    p {
-                        margin-top: 2%;
+    @import "variables";
+    .body {
+        width: 100%;
+        height: 100%;
+        @extend %flex;
+        .body_carrusel {
+            flex-basis: 30%;
+            z-index: 1;
+            .carousel {
+                .carousel-item {
+                    height: 500px;
+                    img {
+                        position: absolute;
+                        object-fit: cover;
+                        left: 0;
+                        top: 0;
+                        min-height: 500px;
+                    }
+                    .btn {
+                        background-color: $celeste;
+                    }
+                    .carousel-caption {
+                        margin-bottom: 7%;
+                        font-size: 150%;
+                        p {
+                            margin-top: 2%;
+                        }
                     }
                 }
             }
         }
+        .contacto_contenido {
+            margin-top: 3%;
+        }
+        .contenido_principal {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contenido_imagen {
+            flex-basis: 20%;
+            margin-left: 45%;
+            height: 15%;
+            width: 15%;
+        }
+        .contenido_formulario {
+            margin-top: 5%;
+            margin-left: 35%;
+            flex-basis: 80%;
+            margin-bottom: 15%;
+            .nombre {
+                width: 50%;
+                margin-top: 1%;
+            }
+            .apellido {
+                width: 50%;
+                margin-top: 1%;
+            }
+            .email {
+                width: 50%;
+                margin-top: 1%;
+            }
+            .mensaje {
+                width: 50%;
+                margin-top: 1%;
+            }
+            .enviar {
+                margin-left: 5%;
+                margin-top: 5%;
+            }
+            .limpiar {
+                margin-left: 15%;
+                margin-top: 5%;
+            }
+            label {
+                color: #ffffff;
+            }
+        }
     }
-    .contacto_formulario {
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        grid-template-rows: 25% 25% 25% 25%;
-        grid-template-areas: ". name . Ln ." ". mail mail mail ." ". mensaje mensaje mensaje ." ". . . .";
-        .formulario_name {
-            grid-area: name;
-            margin-top: 15%;
-        }
-        .formulario_lastname {
-            grid-area: Ln;
-            margin-top: 15%;
-        }
-        .formulario_email {
-            grid-area: mail;
-            margin-top: 15%;
-        }
-        .formulario_msj {
-            grid-area: msj;
-            margin-top: 15%;
-        }
-        label {
-            color: #ffffff;
-        }
-    }
-}

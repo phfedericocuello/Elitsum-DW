@@ -91,47 +91,40 @@
         </div>
     </div>
 
-    <section>
-        <h1 class="contacto_tituloCenter">Contactame</h1>
-        <form action="contacto.php" method="get" class="contacto_formulario">
+    <section class="contacto_contenido">
 
-            <div class="formulario_name">
-                <img src="" alt="img-nombre">
+        <div class="contenido_imagen"><img src="media/Email_SVG.svg" alt=""></div>
+        <div class="contenido_principal">
+            <form action="contacto.php" method="get" class="contenido_formulario">
+
                 <div class="input-group mb-3 nombre">
-                    <span class="input-group-text " id="basic-addon1">(o.O)</span>
+                    <span class="input-group-text " id="basic-addon1"></span>
                     <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-            </div>
 
-            <div class="formulario_lastname">
-                <img src="" alt="img-apellido">
                 <div class="input-group mb-3 apellido">
-                    <span class="input-group-text " id="basic-addon1">(o.O)</span>
+                    <span class="input-group-text " id="basic-addon1"><img src="media/security_SVG.svg" alt=""></span>
                     <input type="text" class="form-control" placeholder="Apellido" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-            </div>
 
-            <div class="formulario_email">
-                <img src="" alt="img-email">
+
                 <div class="input-group mb-3 email">
                     <input type="email" class="form-control" placeholder="Inserte su direccion de e-mail" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                     <span class="input-group-text" id="basic-addon2">@example.com</span>
                 </div>
-            </div>
 
-            <div class="formulario_msj">
-                <img src="" alt="img-msj">
+
                 <div class="input-group mensaje">
-                    <span class="input-group-text">Razon de contacto:</span>
+                    <span class="input-group-text ">Razon de contacto:</span>
                     <textarea class="form-control" aria-label="With textarea" required></textarea>
                 </div>
-            </div>
 
 
 
-            <button class="btn btn-primary enviar" type="submit">Enviar Formulario</button>
-            <button class="btn btn-primary limpiar" type="reset">Limpiar Formulario</button>
-        </form>
+                <button class="btn btn-primary enviar" type="submit">Enviar Formulario</button>
+                <button class="btn btn-primary limpiar" type="reset">Limpiar Formulario</button>
+            </form>
+        </div>
     </section>
 
 
