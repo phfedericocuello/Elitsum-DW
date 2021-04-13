@@ -8,6 +8,11 @@
     @extend %flex;
 }
 
+.btn {
+    background-color: $celeste;
+    border: $celeste;
+}
+
 .body_header {
     flex-basis: 0.5%;
     height: 5%;
@@ -32,23 +37,7 @@
             background-color: $celeste;
             border-radius: 10%;
         }
-        .header_home {
-            background-color: $celeste;
-            border-radius: 10%;
-        }
-        .header_portfolio {
-            background-color: $celeste;
-            border-radius: 10%;
-        }
-        .header_about {
-            background-color: $celeste;
-            border-radius: 10%;
-        }
-        .header_servicios {
-            background-color: $celeste;
-            border-radius: 10%;
-        }
-        .header_contacto {
+        .header_pagina {
             background-color: $celeste;
             border-radius: 10%;
         }

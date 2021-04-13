@@ -15,6 +15,11 @@
   padding: 0;
 }
 
+.btn {
+  background-color: #ae8cee;
+  border: #ae8cee;
+}
+
 .body_header {
   -ms-flex-preferred-size: 0.5%;
       flex-basis: 0.5%;
@@ -55,27 +60,7 @@
   border-radius: 10%;
 }
 
-.body_header nav .header_home {
-  background-color: #ae8cee;
-  border-radius: 10%;
-}
-
-.body_header nav .header_portfolio {
-  background-color: #ae8cee;
-  border-radius: 10%;
-}
-
-.body_header nav .header_about {
-  background-color: #ae8cee;
-  border-radius: 10%;
-}
-
-.body_header nav .header_servicios {
-  background-color: #ae8cee;
-  border-radius: 10%;
-}
-
-.body_header nav .header_contacto {
+.body_header nav .header_pagina {
   background-color: #ae8cee;
   border-radius: 10%;
 }
@@ -146,10 +131,6 @@ a {
   left: 0;
   top: 0;
   min-height: 500px;
-}
-
-.body .body_carrusel .carousel .carousel-item .btn {
-  background-color: #ae8cee;
 }
 
 .body .body_carrusel .carousel .carousel-item .carousel-caption {
@@ -270,10 +251,6 @@ a {
 
 .body .body_botonServicios .boton {
   margin-left: 47%;
-}
-
-.body .body_botonServicios .boton .btn {
-  background-color: #ae8cee;
 }
 
 .body .body_about {

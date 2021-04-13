@@ -1,0 +1,57 @@
+@import "variables";
+.body {
+    width: 100%;
+    height: 100%;
+    @extend %flex;
+    .body_carrusel {
+        flex-basis: 30%;
+        z-index: 1;
+        .carousel {
+            .carousel-item {
+                height: 500px;
+                img {
+                    position: absolute;
+                    object-fit: cover;
+                    left: 0;
+                    top: 0;
+                    min-height: 500px;
+                }
+                .btn {
+                    background-color: $celeste;
+                }
+                .carousel-caption {
+                    margin-bottom: 7%;
+                    font-size: 150%;
+                    p {
+                        margin-top: 2%;
+                    }
+                }
+            }
+        }
+    }
+    .contacto_formulario {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: ". name . Ln ." ". mail mail mail ." ". mensaje mensaje mensaje ." ". . . .";
+        .formulario_name {
+            grid-area: name;
+            margin-top: 15%;
+        }
+        .formulario_lastname {
+            grid-area: Ln;
+            margin-top: 15%;
+        }
+        .formulario_email {
+            grid-area: mail;
+            margin-top: 15%;
+        }
+        .formulario_msj {
+            grid-area: msj;
+            margin-top: 15%;
+        }
+        label {
+            color: #ffffff;
+        }
+    }
+}

@@ -16,7 +16,7 @@
 </head>
 
 <body class="body">
-    <header class="body_header">
+    <header class="body_header shadow p-3 bg-body rounded">
         <div>
             <img src="media/Logo_2.png" class="logo" alt="logo">
         </div>
@@ -26,31 +26,118 @@
                     <a class="nav-link active  " aria-current="page " href="index.html ">Home</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="portfolio.html ">Portfolio</a>
+                    <a class="nav-link cssanimation leVibration sequence" href="portfolio.html ">Portfolio</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="sobre-mi.html ">Sobre Mi</a>
+                    <a class="nav-link cssanimation leVibration sequence " href="sobre-mi.html ">Sobre Mi</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="servicios.html "> Servicios </a>
+                    <a class="nav-link cssanimation leVibration sequence" href="servicios.html " tabindex="-1 "> Servicios </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="contacto.html ">Contacto</a>
+                    <a class="nav-link cssanimation leVibration sequence header_pagina" href="contacto.html " tabindex="-1 ">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <div class="body_carrusel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="media/carrusel2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="black ">Programador Freelance</h3>
+                        <p class="black">Hola! mi nombre es Federico Cuello y soy programador de Back-end.</p>
+                        <div class="item_boton1">
+                            <a class="btn btn-primary  " href="servicios.html" role="button">Mas informacion Sobre Mi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="media/carrusel 1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="black">Servicios con la mas alta calidad asegurada!</h3>
+                        <p class="black">Tenemos una amplia variedad de servicios especializados para que podamos llevar a cabo tus proyectos.</p>
+                        <div class="item_boton2">
+                            <a class="btn btn-primary  " href="servicios.html" role="button">Servicios Disponibles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="media/carrusel3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="black">Obten un Presupuesto Personalizado</h3>
+                        <p class="black">Contactame para obtener un presupuesto personalizado segun el proyecto y sus especificaciones</p>
+                        <div class="item_boton3">
+                            <a class="btn btn-primary  " href="servicios.html" role="button">Informacion de Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
+
+    <section>
+        <h1 class="contacto_tituloCenter">Contactame</h1>
+        <form action="contacto.php" method="get" class="contacto_formulario">
+
+            <div class="formulario_name">
+                <img src="" alt="img-nombre">
+                <div class="input-group mb-3 nombre">
+                    <span class="input-group-text " id="basic-addon1">(o.O)</span>
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+            <div class="formulario_lastname">
+                <img src="" alt="img-apellido">
+                <div class="input-group mb-3 apellido">
+                    <span class="input-group-text " id="basic-addon1">(o.O)</span>
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+            <div class="formulario_email">
+                <img src="" alt="img-email">
+                <div class="input-group mb-3 email">
+                    <input type="email" class="form-control" placeholder="Inserte su direccion de e-mail" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+            </div>
+
+            <div class="formulario_msj">
+                <img src="" alt="img-msj">
+                <div class="input-group mensaje">
+                    <span class="input-group-text">Razon de contacto:</span>
+                    <textarea class="form-control" aria-label="With textarea" required></textarea>
+                </div>
+            </div>
 
 
+
+            <button class="btn btn-primary enviar" type="submit">Enviar Formulario</button>
+            <button class="btn btn-primary limpiar" type="reset">Limpiar Formulario</button>
+        </form>
+    </section>
 
 
     <div class="body_footer">
-        <p>todos los derechos reservados</p>
+        <p class="footer_texto">todos los derechos reservados</p>
     </div>
-
-
-
 
     <!--script de bs-->
     <script src="js/bootstrap.bundle.min.js"></script>
