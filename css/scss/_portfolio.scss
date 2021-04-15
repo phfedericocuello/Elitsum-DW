@@ -1,31 +1,7 @@
 @import "variables";
 body {
     display: grid;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(244, 237, 255, 1) 99.5%);
-    .portfolio_carrusel {
-        flex-basis: 30%;
-        z-index: 1;
-        .carousel {
-            .carousel-item {
-                height: 500px;
-                img {
-                    position: absolute;
-                    object-fit: cover;
-                    left: 0;
-                    top: 0;
-                    min-height: 500px;
-                }
-                .carousel-caption {
-                    margin-bottom: 7%;
-                    font-size: 150%;
-                    p {
-                        margin-top: 2%;
-                    }
-                }
-            }
-        }
-    }
+    @extend %carrusel-banner;
     .portfolio_titulo {
         height: 50%;
         flex-basis: 20%;

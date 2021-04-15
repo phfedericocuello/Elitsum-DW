@@ -11,4 +11,79 @@
     background-image: url(../../media/1.png);
 }
 
+%carrusel-activo {
+    .body_carrusel {
+        flex-basis: 30%;
+        z-index: 1;
+        .carousel {
+            .carousel-item {
+                height: 500px;
+                img {
+                    position: absolute;
+                    object-fit: cover;
+                    left: 0;
+                    top: 0;
+                    min-height: 500px;
+                }
+                .carousel-caption {
+                    margin-bottom: 7%;
+                    font-size: 150%;
+                    p {
+                        margin-top: 2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+%carrusel-banner {
+    .body_carrusel-banner {
+        flex-basis: 30%;
+        z-index: 1;
+        .carousel {
+            .carousel-item {
+                height: 500px;
+                img {
+                    position: absolute;
+                    object-fit: cover;
+                    left: 0;
+                    top: 0;
+                    min-height: 500px;
+                }
+                .carousel-caption {
+                    margin-bottom: 7%;
+                    font-size: 150%;
+                    p {
+                        margin-top: 2%;
+                    }
+                }
+            }
+            button {
+                display: none;
+            }
+        }
+    }
+}
+
+%design_items {
+    height: 100%;
+    width: 65%;
+    background-color: white;
+    h4 {
+        margin-left: 32%;
+        margin-top: 10px;
+    }
+    img {
+        height: 25%;
+        width: 50%;
+        margin-left: 23%;
+        margin-top: 10px;
+    }
+    p {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
 $celeste: #ae8cee;
