@@ -1,3 +1,36 @@
+@charset "UTF-8";
+@media only screen and (max-width: 700px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .body_header {
+    width: 100%;
+  }
+  .body_header .header_logo .logo {
+    width: 60%;
+    height: 30%;
+    margin-top: 20%;
+  }
+  .body_header nav .nav .nav-link {
+    font-size: 10%;
+  }
+  .body_carrusel {
+    display: none;
+  }
+  .body_yo .titulo_yo {
+    font-size: 150%;
+  }
+  .body_yo .texto_yo {
+    font-size: 80%;
+    width: 70%;
+    margin-left: 13%;
+  }
+  .resumen_uno {
+    margin-left: 0;
+  }
+}
+
 .body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,27 +103,72 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   display: none;
 }
 
-.body .body_design .design_isologo, .body .body_design .design_publicitario, .body .body_design .design_redes, .body .body_design .design_catalogo, .body .body_design .design_editorial {
+.body .body_design .design_imagen, .body .body_design .design_brand, .body .body_design .design_redes {
   height: 100%;
   width: 65%;
-  background-color: white;
 }
 
-.body .body_design .design_isologo h4, .body .body_design .design_publicitario h4, .body .body_design .design_redes h4, .body .body_design .design_catalogo h4, .body .body_design .design_editorial h4 {
-  margin-left: 32%;
+.body .body_design .design_imagen h4, .body .body_design .design_brand h4, .body .body_design .design_redes h4 {
   margin-top: 10px;
 }
 
-.body .body_design .design_isologo img, .body .body_design .design_publicitario img, .body .body_design .design_redes img, .body .body_design .design_catalogo img, .body .body_design .design_editorial img {
-  height: 25%;
-  width: 50%;
-  margin-left: 23%;
-  margin-top: 10px;
+.body .body_design .design_imagen img, .body .body_design .design_brand img, .body .body_design .design_redes img {
+  height: 40%;
+  width: 40%;
+  margin-left: 27%;
 }
 
-.body .body_design .design_isologo p, .body .body_design .design_publicitario p, .body .body_design .design_redes p, .body .body_design .design_catalogo p, .body .body_design .design_editorial p {
+.body .body_design .design_imagen p, .body .body_design .design_brand p, .body .body_design .design_redes p {
   text-align: center;
   padding: 10px;
+}
+
+.tamañoLetra-50 {
+  font-size: 50%;
+}
+
+.tamañoLetra-100 {
+  font-size: 100%;
+}
+
+.tamañoLetra-150 {
+  font-size: 150%;
+}
+
+.tamañoLetra-200 {
+  font-size: 200%;
+}
+
+.tamañoLetra-250 {
+  font-size: 250%;
+}
+
+.tamañoLetra-300 {
+  font-size: 300%;
+}
+
+.tamañoLetra-350 {
+  font-size: 350%;
+}
+
+.tamañoLetra-400 {
+  font-size: 400%;
+}
+
+.tamañoLetra-450 {
+  font-size: 450%;
+}
+
+.tamañoLetra-500 {
+  font-size: 500%;
+}
+
+.tamañoLetra-550 {
+  font-size: 550%;
+}
+
+.tamañoLetra-600 {
+  font-size: 600%;
 }
 
 * {
@@ -106,7 +184,6 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
 .body_header {
   -ms-flex-preferred-size: 0.5%;
       flex-basis: 0.5%;
-  height: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,6 +196,10 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   top: 0;
   background-color: white;
   z-index: 10000;
+}
+
+.body_header .topnav .icon {
+  display: none;
 }
 
 .body_header .logo {
@@ -141,6 +222,7 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
 .body_header nav a:hover {
   background-color: #ae8cee;
   border-radius: 10%;
+  color: black;
 }
 
 .body_header nav .header_pagina {
@@ -252,27 +334,72 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   display: none;
 }
 
-.body .body_design .design_isologo, .body .body_design .design_publicitario, .body .body_design .design_redes, .body .body_design .design_catalogo, .body .body_design .design_editorial {
+.body .body_design .design_imagen, .body .body_design .design_brand, .body .body_design .design_redes {
   height: 100%;
   width: 65%;
-  background-color: white;
 }
 
-.body .body_design .design_isologo h4, .body .body_design .design_publicitario h4, .body .body_design .design_redes h4, .body .body_design .design_catalogo h4, .body .body_design .design_editorial h4 {
-  margin-left: 32%;
+.body .body_design .design_imagen h4, .body .body_design .design_brand h4, .body .body_design .design_redes h4 {
   margin-top: 10px;
 }
 
-.body .body_design .design_isologo img, .body .body_design .design_publicitario img, .body .body_design .design_redes img, .body .body_design .design_catalogo img, .body .body_design .design_editorial img {
-  height: 25%;
-  width: 50%;
-  margin-left: 23%;
-  margin-top: 10px;
+.body .body_design .design_imagen img, .body .body_design .design_brand img, .body .body_design .design_redes img {
+  height: 40%;
+  width: 40%;
+  margin-left: 27%;
 }
 
-.body .body_design .design_isologo p, .body .body_design .design_publicitario p, .body .body_design .design_redes p, .body .body_design .design_catalogo p, .body .body_design .design_editorial p {
+.body .body_design .design_imagen p, .body .body_design .design_brand p, .body .body_design .design_redes p {
   text-align: center;
   padding: 10px;
+}
+
+.tamañoLetra-50 {
+  font-size: 50%;
+}
+
+.tamañoLetra-100 {
+  font-size: 100%;
+}
+
+.tamañoLetra-150 {
+  font-size: 150%;
+}
+
+.tamañoLetra-200 {
+  font-size: 200%;
+}
+
+.tamañoLetra-250 {
+  font-size: 250%;
+}
+
+.tamañoLetra-300 {
+  font-size: 300%;
+}
+
+.tamañoLetra-350 {
+  font-size: 350%;
+}
+
+.tamañoLetra-400 {
+  font-size: 400%;
+}
+
+.tamañoLetra-450 {
+  font-size: 450%;
+}
+
+.tamañoLetra-500 {
+  font-size: 500%;
+}
+
+.tamañoLetra-550 {
+  font-size: 550%;
+}
+
+.tamañoLetra-600 {
+  font-size: 600%;
 }
 
 .body {
@@ -297,8 +424,8 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   margin-top: 5%;
-  font-size: 300%;
   text-align: center;
+  text-shadow: 2px 2px #ae8cee;
 }
 
 .body .body_yo .texto_yo {
@@ -320,7 +447,6 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 100%;
   margin-left: 1.7%;
   margin-top: 10%;
 }
@@ -399,8 +525,9 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
 .body .body_about .about_titulo {
   -ms-flex-preferred-size: 15%;
       flex-basis: 15%;
-  margin-left: 38%;
+  margin-left: 35%;
   margin-top: 7%;
+  text-shadow: 2px 2px #ae8cee;
 }
 
 .body .body_about .about_texto {
@@ -424,6 +551,7 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   width: 60%;
   margin-left: 21.7%;
   margin-top: 7%;
+  margin-bottom: 10%;
 }
 
 .body .body_trabajos img {
@@ -527,27 +655,72 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   display: none;
 }
 
-.body .body_design .design_isologo, .body .body_design .design_publicitario, .body .body_design .design_redes, .body .body_design .design_catalogo, .body .body_design .design_editorial {
+.body .body_design .design_imagen, .body .body_design .design_brand, .body .body_design .design_redes {
   height: 100%;
   width: 65%;
-  background-color: white;
 }
 
-.body .body_design .design_isologo h4, .body .body_design .design_publicitario h4, .body .body_design .design_redes h4, .body .body_design .design_catalogo h4, .body .body_design .design_editorial h4 {
-  margin-left: 32%;
+.body .body_design .design_imagen h4, .body .body_design .design_brand h4, .body .body_design .design_redes h4 {
   margin-top: 10px;
 }
 
-.body .body_design .design_isologo img, .body .body_design .design_publicitario img, .body .body_design .design_redes img, .body .body_design .design_catalogo img, .body .body_design .design_editorial img {
-  height: 25%;
-  width: 50%;
-  margin-left: 23%;
-  margin-top: 10px;
+.body .body_design .design_imagen img, .body .body_design .design_brand img, .body .body_design .design_redes img {
+  height: 40%;
+  width: 40%;
+  margin-left: 27%;
 }
 
-.body .body_design .design_isologo p, .body .body_design .design_publicitario p, .body .body_design .design_redes p, .body .body_design .design_catalogo p, .body .body_design .design_editorial p {
+.body .body_design .design_imagen p, .body .body_design .design_brand p, .body .body_design .design_redes p {
   text-align: center;
   padding: 10px;
+}
+
+.tamañoLetra-50 {
+  font-size: 50%;
+}
+
+.tamañoLetra-100 {
+  font-size: 100%;
+}
+
+.tamañoLetra-150 {
+  font-size: 150%;
+}
+
+.tamañoLetra-200 {
+  font-size: 200%;
+}
+
+.tamañoLetra-250 {
+  font-size: 250%;
+}
+
+.tamañoLetra-300 {
+  font-size: 300%;
+}
+
+.tamañoLetra-350 {
+  font-size: 350%;
+}
+
+.tamañoLetra-400 {
+  font-size: 400%;
+}
+
+.tamañoLetra-450 {
+  font-size: 450%;
+}
+
+.tamañoLetra-500 {
+  font-size: 500%;
+}
+
+.tamañoLetra-550 {
+  font-size: 550%;
+}
+
+.tamañoLetra-600 {
+  font-size: 600%;
 }
 
 .body {
@@ -622,27 +795,72 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   display: none;
 }
 
-.body .body_design .design_isologo, .body .body_design .design_publicitario, .body .body_design .design_redes, .body .body_design .design_catalogo, .body .body_design .design_editorial {
+.body .body_design .design_imagen, .body .body_design .design_brand, .body .body_design .design_redes {
   height: 100%;
   width: 65%;
-  background-color: white;
 }
 
-.body .body_design .design_isologo h4, .body .body_design .design_publicitario h4, .body .body_design .design_redes h4, .body .body_design .design_catalogo h4, .body .body_design .design_editorial h4 {
-  margin-left: 32%;
+.body .body_design .design_imagen h4, .body .body_design .design_brand h4, .body .body_design .design_redes h4 {
   margin-top: 10px;
 }
 
-.body .body_design .design_isologo img, .body .body_design .design_publicitario img, .body .body_design .design_redes img, .body .body_design .design_catalogo img, .body .body_design .design_editorial img {
-  height: 25%;
-  width: 50%;
-  margin-left: 23%;
-  margin-top: 10px;
+.body .body_design .design_imagen img, .body .body_design .design_brand img, .body .body_design .design_redes img {
+  height: 40%;
+  width: 40%;
+  margin-left: 27%;
 }
 
-.body .body_design .design_isologo p, .body .body_design .design_publicitario p, .body .body_design .design_redes p, .body .body_design .design_catalogo p, .body .body_design .design_editorial p {
+.body .body_design .design_imagen p, .body .body_design .design_brand p, .body .body_design .design_redes p {
   text-align: center;
   padding: 10px;
+}
+
+.tamañoLetra-50 {
+  font-size: 50%;
+}
+
+.tamañoLetra-100 {
+  font-size: 100%;
+}
+
+.tamañoLetra-150 {
+  font-size: 150%;
+}
+
+.tamañoLetra-200 {
+  font-size: 200%;
+}
+
+.tamañoLetra-250 {
+  font-size: 250%;
+}
+
+.tamañoLetra-300 {
+  font-size: 300%;
+}
+
+.tamañoLetra-350 {
+  font-size: 350%;
+}
+
+.tamañoLetra-400 {
+  font-size: 400%;
+}
+
+.tamañoLetra-450 {
+  font-size: 450%;
+}
+
+.tamañoLetra-500 {
+  font-size: 500%;
+}
+
+.tamañoLetra-550 {
+  font-size: 550%;
+}
+
+.tamañoLetra-600 {
+  font-size: 600%;
 }
 
 body {
@@ -657,13 +875,12 @@ body .portfolio_titulo {
 }
 
 body .portfolio_titulo h1 {
-  font-size: 200%;
   text-align: center;
   margin-top: 2%;
 }
 
 body .portfolio_trabajos {
-  margin-top: 10%;
+  margin-top: 2%;
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
   height: 20%;
@@ -682,7 +899,7 @@ body .portfolio_trabajos .uno_imagen {
   grid-area: uno_imagen;
   margin-left: 60%;
   height: 90%;
-  width: 40%;
+  width: 25%;
 }
 
 body .portfolio_trabajos .uno_texto {
@@ -698,7 +915,7 @@ body .portfolio_trabajos .dos_imagen {
   -ms-grid-column: 3;
   grid-area: dos_imagen;
   height: 90%;
-  width: 40%;
+  width: 55%;
 }
 
 body .portfolio_trabajos .dos_texto {
@@ -715,7 +932,7 @@ body .portfolio_trabajos .tres_imagen {
   grid-area: tres_imagen;
   margin-left: 60%;
   height: 90%;
-  width: 40%;
+  width: 25%;
 }
 
 body .portfolio_trabajos .tres_texto {
@@ -731,7 +948,7 @@ body .portfolio_trabajos .cuatro_imagen {
   -ms-grid-column: 3;
   grid-area: cuatro_imagen;
   height: 90%;
-  width: 40%;
+  width: 55%;
 }
 
 body .portfolio_trabajos .cuatro_texto {
@@ -814,27 +1031,72 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   display: none;
 }
 
-.body .body_design .design_isologo, .body .body_design .design_publicitario, .body .body_design .design_redes, .body .body_design .design_catalogo, .body .body_design .design_editorial {
+.body .body_design .design_imagen, .body .body_design .design_brand, .body .body_design .design_redes {
   height: 100%;
   width: 65%;
-  background-color: white;
 }
 
-.body .body_design .design_isologo h4, .body .body_design .design_publicitario h4, .body .body_design .design_redes h4, .body .body_design .design_catalogo h4, .body .body_design .design_editorial h4 {
-  margin-left: 32%;
+.body .body_design .design_imagen h4, .body .body_design .design_brand h4, .body .body_design .design_redes h4 {
   margin-top: 10px;
 }
 
-.body .body_design .design_isologo img, .body .body_design .design_publicitario img, .body .body_design .design_redes img, .body .body_design .design_catalogo img, .body .body_design .design_editorial img {
-  height: 25%;
-  width: 50%;
-  margin-left: 23%;
-  margin-top: 10px;
+.body .body_design .design_imagen img, .body .body_design .design_brand img, .body .body_design .design_redes img {
+  height: 40%;
+  width: 40%;
+  margin-left: 27%;
 }
 
-.body .body_design .design_isologo p, .body .body_design .design_publicitario p, .body .body_design .design_redes p, .body .body_design .design_catalogo p, .body .body_design .design_editorial p {
+.body .body_design .design_imagen p, .body .body_design .design_brand p, .body .body_design .design_redes p {
   text-align: center;
   padding: 10px;
+}
+
+.tamañoLetra-50 {
+  font-size: 50%;
+}
+
+.tamañoLetra-100 {
+  font-size: 100%;
+}
+
+.tamañoLetra-150 {
+  font-size: 150%;
+}
+
+.tamañoLetra-200 {
+  font-size: 200%;
+}
+
+.tamañoLetra-250 {
+  font-size: 250%;
+}
+
+.tamañoLetra-300 {
+  font-size: 300%;
+}
+
+.tamañoLetra-350 {
+  font-size: 350%;
+}
+
+.tamañoLetra-400 {
+  font-size: 400%;
+}
+
+.tamañoLetra-450 {
+  font-size: 450%;
+}
+
+.tamañoLetra-500 {
+  font-size: 500%;
+}
+
+.tamañoLetra-550 {
+  font-size: 550%;
+}
+
+.tamañoLetra-600 {
+  font-size: 600%;
 }
 
 .body {
@@ -894,6 +1156,7 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
 .body .body_logo .logo_marca .marca_titulo {
   margin-top: 1%;
   margin-left: 45%;
+  text-shadow: 2px 2px #ae8cee;
 }
 
 .body .body_logo .logo_explicacion {
@@ -920,7 +1183,6 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 100%;
   margin-left: 1.7%;
   margin-top: 15%;
   margin-bottom: 5%;
@@ -1059,27 +1321,72 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   display: none;
 }
 
-.body .body_design .design_isologo, .body .body_design .design_publicitario, .body .body_design .design_redes, .body .body_design .design_catalogo, .body .body_design .design_editorial {
+.body .body_design .design_imagen, .body .body_design .design_brand, .body .body_design .design_redes {
   height: 100%;
   width: 65%;
-  background-color: white;
 }
 
-.body .body_design .design_isologo h4, .body .body_design .design_publicitario h4, .body .body_design .design_redes h4, .body .body_design .design_catalogo h4, .body .body_design .design_editorial h4 {
-  margin-left: 32%;
+.body .body_design .design_imagen h4, .body .body_design .design_brand h4, .body .body_design .design_redes h4 {
   margin-top: 10px;
 }
 
-.body .body_design .design_isologo img, .body .body_design .design_publicitario img, .body .body_design .design_redes img, .body .body_design .design_catalogo img, .body .body_design .design_editorial img {
-  height: 25%;
-  width: 50%;
-  margin-left: 23%;
-  margin-top: 10px;
+.body .body_design .design_imagen img, .body .body_design .design_brand img, .body .body_design .design_redes img {
+  height: 40%;
+  width: 40%;
+  margin-left: 27%;
 }
 
-.body .body_design .design_isologo p, .body .body_design .design_publicitario p, .body .body_design .design_redes p, .body .body_design .design_catalogo p, .body .body_design .design_editorial p {
+.body .body_design .design_imagen p, .body .body_design .design_brand p, .body .body_design .design_redes p {
   text-align: center;
   padding: 10px;
+}
+
+.tamañoLetra-50 {
+  font-size: 50%;
+}
+
+.tamañoLetra-100 {
+  font-size: 100%;
+}
+
+.tamañoLetra-150 {
+  font-size: 150%;
+}
+
+.tamañoLetra-200 {
+  font-size: 200%;
+}
+
+.tamañoLetra-250 {
+  font-size: 250%;
+}
+
+.tamañoLetra-300 {
+  font-size: 300%;
+}
+
+.tamañoLetra-350 {
+  font-size: 350%;
+}
+
+.tamañoLetra-400 {
+  font-size: 400%;
+}
+
+.tamañoLetra-450 {
+  font-size: 450%;
+}
+
+.tamañoLetra-500 {
+  font-size: 500%;
+}
+
+.tamañoLetra-550 {
+  font-size: 550%;
+}
+
+.tamañoLetra-600 {
+  font-size: 600%;
 }
 
 .body {
@@ -1087,97 +1394,10 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   height: 100%;
 }
 
-.body .body_triangulo {
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-      grid-template-areas: ". tr1 titulo tr2 ." ". tr3 titulo tr4 .";
-  margin-top: 1%;
-}
-
-.body .body_triangulo .triangulo_titulo {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: titulo;
-  margin-left: 10%;
-  margin-top: 20%;
-}
-
-.body .body_triangulo .triangulo_1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: tr1;
-  margin-top: 5%;
-  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
-          clip-path: polygon(50% 100%, 0 0, 100% 0);
-  height: 80%;
-  width: 50%;
-}
-
-.body .body_triangulo .triangulo_1 img {
-  height: 100%;
-  width: 100%;
-}
-
-.body .body_triangulo .triangulo_2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: tr2;
-  margin-top: 5%;
-  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
-          clip-path: polygon(50% 100%, 0 0, 100% 0);
-  height: 80%;
-  width: 50%;
-  margin-left: 50%;
-}
-
-.body .body_triangulo .triangulo_2 img {
-  height: 100%;
-  width: 100%;
-}
-
-.body .body_triangulo .triangulo_3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: tr3;
-  margin-top: 5%;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  height: 80%;
-  width: 50%;
-  margin-left: 50%;
-}
-
-.body .body_triangulo .triangulo_3 img {
-  height: 100%;
-  width: 100%;
-}
-
-.body .body_triangulo .triangulo_4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  grid-area: tr4;
-  margin-top: 5%;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  height: 80%;
-  width: 50%;
-}
-
-.body .body_triangulo .triangulo_4 img {
-  height: 100%;
-  width: 100%;
-}
-
 .body .body_design-titulo {
-  margin-left: 45%;
-  margin-top: 15%;
+  margin-left: 43%;
+  margin-top: 3%;
+  text-shadow: 2px 2px #ae8cee;
 }
 
 .body .body_design {
@@ -1185,25 +1405,34 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
       flex-basis: 15%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-      grid-template-areas: "iso . publi . redes" ". cat . edit .";
-  margin-top: 1%;
+  -ms-grid-columns: 30% 5% 30% 5% 30%;
+      grid-template-columns: 30% 5% 30% 5% 30%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+      grid-template-areas: "imagen . brand . redes";
+  margin-top: 2%;
   justify-items: center;
 }
 
-.body .body_design .design_isologo {
+.body .body_design .design_imagen {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: iso;
+  grid-area: imagen;
 }
 
-.body .body_design .design_publicitario {
+.body .body_design .design_imagen h4 {
+  margin-left: 24%;
+}
+
+.body .body_design .design_brand {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
-  grid-area: publi;
+  grid-area: brand;
+  margin-left: 2%;
+}
+
+.body .body_design .design_brand h4 {
+  margin-left: 24%;
 }
 
 .body .body_design .design_redes {
@@ -1212,21 +1441,14 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   grid-area: redes;
 }
 
-.body .body_design .design_catalogo {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: cat;
-}
-
-.body .body_design .design_editorial {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  grid-area: edit;
+.body .body_design .design_redes h4 {
+  margin-left: 30%;
 }
 
 .body .body_programacion-titulo {
-  margin-left: 42%;
+  margin-left: 38%;
   margin-top: 10%;
+  text-shadow: 2px 2px #ae8cee;
 }
 
 .body .body_programacion {
@@ -1239,45 +1461,14 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
       grid-template-columns: 40% 10% 40%;
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
-      grid-template-areas: "back . res" " web . serv";
+      grid-template-areas: "web . seo" " res . serv";
   margin-top: 1%;
-}
-
-.body .body_programacion .programacion_back {
-  margin-top: 5%;
-  margin-left: 2%;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: back;
-  height: 50%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.body .body_programacion .programacion_back .back_titulo {
-  margin-top: 5%;
-  padding-right: 10%;
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-  text-align: center;
-}
-
-.body .body_programacion .programacion_back .back_texto {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
-  text-align: center;
 }
 
 .body .body_programacion .programacion_web {
   margin-top: 5%;
   margin-left: 2%;
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: web;
   height: 50%;
@@ -1292,7 +1483,7 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
 }
 
 .body .body_programacion .programacion_web .web_titulo {
-  margin-top: 7%;
+  margin-top: 5%;
   padding-right: 10%;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
@@ -1300,18 +1491,17 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
 }
 
 .body .body_programacion .programacion_web .web_texto {
-  margin-top: 5%;
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
   text-align: center;
 }
 
-.body .body_programacion .programacion_responsive {
+.body .body_programacion .programacion_seo {
   margin-top: 5%;
   margin-left: 20%;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
-  grid-area: res;
+  grid-area: seo;
   height: 50%;
   width: 100%;
   display: -webkit-box;
@@ -1323,15 +1513,47 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
           flex-direction: row-reverse;
 }
 
-.body .body_programacion .programacion_responsive .responsive_titulo {
-  margin-top: 5%;
+.body .body_programacion .programacion_seo .seo_titulo {
+  margin-top: 7%;
   padding-left: 10%;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   text-align: center;
 }
 
+.body .body_programacion .programacion_seo .seo_texto {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  text-align: center;
+}
+
+.body .body_programacion .programacion_responsive {
+  margin-top: 5%;
+  margin-left: 2%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: res;
+  height: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.body .body_programacion .programacion_responsive .responsive_titulo {
+  margin-top: 5%;
+  padding-right: 10%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: center;
+}
+
 .body .body_programacion .programacion_responsive .responsive_texto {
+  margin-top: 5%;
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
   text-align: center;
@@ -1371,6 +1593,7 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
 .body .body_asesoramiento-titulo {
   margin-left: 42%;
   margin-top: 10%;
+  text-shadow: 2px 2px #ae8cee;
 }
 
 .body .body_asesoramiento {
@@ -1403,7 +1626,7 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
       flex-basis: 50%;
   text-align: center;
   margin-right: 10%;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-left: 0%;
 }
 
@@ -1479,27 +1702,72 @@ body .body_carrusel-banner .carousel button, .body .body_carrusel-banner .carous
   display: none;
 }
 
-.body .body_design .design_isologo, .body .body_design .design_publicitario, .body .body_design .design_redes, .body .body_design .design_catalogo, .body .body_design .design_editorial {
+.body .body_design .design_imagen, .body .body_design .design_brand, .body .body_design .design_redes {
   height: 100%;
   width: 65%;
-  background-color: white;
 }
 
-.body .body_design .design_isologo h4, .body .body_design .design_publicitario h4, .body .body_design .design_redes h4, .body .body_design .design_catalogo h4, .body .body_design .design_editorial h4 {
-  margin-left: 32%;
+.body .body_design .design_imagen h4, .body .body_design .design_brand h4, .body .body_design .design_redes h4 {
   margin-top: 10px;
 }
 
-.body .body_design .design_isologo img, .body .body_design .design_publicitario img, .body .body_design .design_redes img, .body .body_design .design_catalogo img, .body .body_design .design_editorial img {
-  height: 25%;
-  width: 50%;
-  margin-left: 23%;
-  margin-top: 10px;
+.body .body_design .design_imagen img, .body .body_design .design_brand img, .body .body_design .design_redes img {
+  height: 40%;
+  width: 40%;
+  margin-left: 27%;
 }
 
-.body .body_design .design_isologo p, .body .body_design .design_publicitario p, .body .body_design .design_redes p, .body .body_design .design_catalogo p, .body .body_design .design_editorial p {
+.body .body_design .design_imagen p, .body .body_design .design_brand p, .body .body_design .design_redes p {
   text-align: center;
   padding: 10px;
+}
+
+.tamañoLetra-50 {
+  font-size: 50%;
+}
+
+.tamañoLetra-100 {
+  font-size: 100%;
+}
+
+.tamañoLetra-150 {
+  font-size: 150%;
+}
+
+.tamañoLetra-200 {
+  font-size: 200%;
+}
+
+.tamañoLetra-250 {
+  font-size: 250%;
+}
+
+.tamañoLetra-300 {
+  font-size: 300%;
+}
+
+.tamañoLetra-350 {
+  font-size: 350%;
+}
+
+.tamañoLetra-400 {
+  font-size: 400%;
+}
+
+.tamañoLetra-450 {
+  font-size: 450%;
+}
+
+.tamañoLetra-500 {
+  font-size: 500%;
+}
+
+.tamañoLetra-550 {
+  font-size: 550%;
+}
+
+.tamañoLetra-600 {
+  font-size: 600%;
 }
 
 .body {

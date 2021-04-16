@@ -1,9 +1,4 @@
-// %grid-index {
-//     display: grid;
-//     grid-template-columns: 25% 25% 25% 25%;
-//     grid-template-rows: 1% 24.5% 15% 15% 20% 20% 5%;
-//     grid-template-areas: "header header header header" "carrusel carrusel carrusel carrusel" "yo yo yo yo" "resumen resumen resumen resumen" "boton boton boton boton" "trabajos trabajos trabajos trabajos" "clientes clientes clientes clientes" "footer footer footer footer";
-// }
+$celeste: #ae8cee;
 %flex {
     display: flex;
     margin: 0;
@@ -69,16 +64,13 @@
 %design_items {
     height: 100%;
     width: 65%;
-    background-color: white;
     h4 {
-        margin-left: 32%;
         margin-top: 10px;
     }
     img {
-        height: 25%;
-        width: 50%;
-        margin-left: 23%;
-        margin-top: 10px;
+        height: 40%;
+        width: 40%;
+        margin-left: 27%;
     }
     p {
         text-align: center;
@@ -86,4 +78,14 @@
     }
 }
 
-$celeste: #ae8cee;
+@function ismultile100($title) {
+    @return($title % 50==0);
+}
+
+@for $title from 50 through 600 {
+    @if (ismultile100($title)) {
+        .tamañoLetra-#{$title} {
+            font-size: 0% + $title;
+        }
+    }
+}

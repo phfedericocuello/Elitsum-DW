@@ -12,8 +12,8 @@
         .titulo_yo {
             flex-basis: 30%;
             margin-top: 5%;
-            font-size: 300%;
             text-align: center;
+            text-shadow: 2px 2px #ae8cee;
         }
         .texto_yo {
             flex-basis: 70%;
@@ -27,7 +27,6 @@
         flex-basis: 15%;
         display: flex;
         flex-direction: row;
-        width: 100%;
         margin-left: 1.7%;
         margin-top: 10%;
         img {
@@ -88,8 +87,9 @@
         flex-basis: 20%;
         .about_titulo {
             flex-basis: 15%;
-            margin-left: 38%;
+            margin-left: 35%;
             margin-top: 7%;
+            text-shadow: 2px 2px #ae8cee;
         }
         .about_texto {
             flex-basis: 70%;
@@ -107,6 +107,7 @@
         width: 60%;
         margin-left: 21.7%;
         margin-top: 7%;
+        margin-bottom: 10%;
         img {
             height: 100%;
             width: 100%;
