@@ -1,5 +1,5 @@
 @import "variables";
-.body {
+.body-about {
     width: 100%;
     height: 100%;
     @extend %flex;
@@ -10,100 +10,27 @@
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 50% 50%;
         grid-template-areas: "nombres marca exp" "nombres marca exp";
-        margin-top: 4%;
         justify-items: center;
         .logo_nombres {
             grid-area: nombres;
-            .nombres_elit {
-                margin-left: 0%;
-                text-align: center;
-            }
-            .nombres_mas {
-                margin-left: 40%;
-            }
         }
         .logo_marca {
             grid-area: marca;
-            margin-top: 5%;
-            .logo {
-                height: 100%;
-                width: 20%;
-                margin-left: 42%;
-            }
-            p {
-                margin-left: 33%;
-                margin-top: 3%;
-            }
-            .marca_titulo {
-                margin-top: 1%;
-                margin-left: 45%;
-                text-shadow: 2px 2px #ae8cee;
-            }
         }
         .logo_explicacion {
             grid-area: exp;
-            .explicacion_texto {
-                margin-top: 10%;
-                margin-right: 25%;
-                margin-left: 25%;
-            }
         }
     }
     .body_columnas-about {
-        margin-top: 5%;
         flex-basis: 15%;
-        display: flex;
-        flex-direction: row;
-        margin-left: 1.7%;
-        margin-top: 15%;
-        margin-bottom: 5%;
-        img {
-            height: 40%;
-            width: 40%;
-            margin-bottom: 5%;
-            margin-top: 5%;
-        }
         .columnas_vision {
             flex-basis: 25%;
-            margin-left: 10%;
-            background-color: white;
-            .vision_texto {
-                text-align: center;
-                width: 100%;
-                padding-left: 20%;
-                padding-right: 20%;
-            }
-            img {
-                margin-left: 28%
-            }
         }
         .columnas_historia {
             flex-basis: 25%;
-            background-color: white;
-            margin-left: 2%;
-            .historia_texto {
-                text-align: center;
-                width: 100%;
-                padding-left: 20%;
-                padding-right: 20%;
-            }
-            img {
-                margin-left: 30%;
-            }
         }
         .columnas_valores {
             flex-basis: 25%;
-            background-color: white;
-            margin-left: 2%;
-            .valores_texto {
-                text-align: center;
-                width: 100%;
-                padding-left: 20%;
-                padding-right: 20%;
-            }
-            img {
-                margin-left: 30%
-            }
         }
     }
 }

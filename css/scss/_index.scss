@@ -1,5 +1,5 @@
 @import "variables";
-.body {
+.body-index {
     width: 100%;
     height: 100%;
     @extend %flex;
@@ -11,15 +11,11 @@
         height: 10%;
         .titulo_yo {
             flex-basis: 30%;
-            margin-top: 5%;
             text-align: center;
             text-shadow: 2px 2px #ae8cee;
         }
         .texto_yo {
             flex-basis: 70%;
-            width: 50%;
-            margin-left: 25%;
-            font-size: 120%;
             text-align: center;
         }
     }
@@ -29,23 +25,11 @@
         flex-direction: row;
         margin-left: 1.7%;
         margin-top: 10%;
-        img {
-            height: 40%;
-            width: 40%;
-            margin-left: 10%;
-            margin-bottom: 10%;
-        }
         .resumen_uno {
             flex-basis: 25%;
-            margin-left: 15%;
             width: 70%;
             .uno_texto {
                 text-align: center;
-                width: 70%;
-            }
-            .uno_titulo {
-                margin-left: 10%;
-                padding-left: 3%;
             }
             img {
                 padding-left: 10%;
@@ -55,46 +39,26 @@
             flex-basis: 25%;
             .dos_texto {
                 text-align: center;
-                width: 70%;
-            }
-            .dos_titulo {
-                margin-left: 8%;
             }
         }
         .resumen_tres {
             flex-basis: 25%;
             .tres_texto {
                 text-align: center;
-                width: 70%;
-            }
-            .tres_titulo {
-                margin-left: 15%;
             }
         }
     }
-    // .fondo2 {
-    //     background: rgb(255, 255, 255);
-    //     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(246, 238, 255, 1) 96%);
-    // }
     .body_botonServicios {
-        flex-basis: 20%;
-        margin-top: 3%;
-        .boton {
-            margin-left: 47%;
-        }
+        flex-basis: 5%;
     }
     .body_about {
         flex-basis: 20%;
         .about_titulo {
             flex-basis: 15%;
-            margin-left: 35%;
-            margin-top: 7%;
             text-shadow: 2px 2px #ae8cee;
         }
         .about_texto {
             flex-basis: 70%;
-            width: 40%;
-            margin-left: 30%;
             text-align: center;
         }
     }
@@ -102,12 +66,8 @@
         flex-basis: 20%;
         display: grid;
         grid-template-rows: 70% 30%;
-        grid-template-columns: 20% 5% 20% 5% 20% 5% 20%;
+        grid-template-columns: 22% 5% 22% 5% 22% 5% 22%;
         grid-template-areas: "t1 . t2 . t3 . t4 " ". . . . . . .";
-        width: 60%;
-        margin-left: 21.7%;
-        margin-top: 7%;
-        margin-bottom: 10%;
         img {
             height: 100%;
             width: 100%;

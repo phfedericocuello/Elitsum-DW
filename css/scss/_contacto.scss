@@ -1,12 +1,7 @@
     @import "variables";
-    .body {
-        width: 100%;
-        height: 100%;
+    .body-contacto {
         @extend %flex;
         @extend %carrusel-banner;
-        .contacto_contenido {
-            margin-top: 3%;
-        }
         .contenido_principal {
             display: flex;
             flex-direction: column;
@@ -14,41 +9,8 @@
         }
         .contenido_imagen {
             flex-basis: 20%;
-            margin-left: 45%;
-            height: 15%;
-            width: 15%;
         }
         .contenido_formulario {
-            margin-top: 5%;
-            margin-left: 35%;
             flex-basis: 80%;
-            margin-bottom: 15%;
-            .nombre {
-                width: 50%;
-                margin-top: 1%;
-            }
-            .apellido {
-                width: 50%;
-                margin-top: 1%;
-            }
-            .email {
-                width: 50%;
-                margin-top: 1%;
-            }
-            .mensaje {
-                width: 50%;
-                margin-top: 1%;
-            }
-            .enviar {
-                margin-left: 5%;
-                margin-top: 5%;
-            }
-            .limpiar {
-                margin-left: 15%;
-                margin-top: 5%;
-            }
-            label {
-                color: #ffffff;
-            }
         }
     }

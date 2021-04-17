@@ -1,64 +1,37 @@
 @import "variables";
-body {
-    display: grid;
+.body-portfolio {
+    display: flex;
+    flex-direction: column;
     @extend %carrusel-banner;
-    .portfolio_titulo {
-        height: 50%;
-        flex-basis: 20%;
-        h1 {
-            text-align: center;
-            margin-top: 2%;
-        }
-    }
     .portfolio_trabajos {
-        margin-top: 2%;
-        flex-basis: 70%;
-        height: 20%;
+        flex-basis: 50%;
         display: grid;
         grid-template-rows: 21.3% 5% 21.3% 5% 21.3% 5% 21.3% 5%;
         grid-template-columns: 45% 10% 45%;
         grid-template-areas: "uno_imagen . uno_texto" ". . ." "dos_texto . dos_imagen" ". . ." "tres_imagen . tres_texto" ". . ." "cuatro_texto . cuatro_imagen";
         .uno_imagen {
             grid-area: uno_imagen;
-            margin-left: 60%;
-            height: 90%;
-            width: 25%;
         }
         .uno_texto {
             grid-area: uno_texto;
-            margin-top: 12%;
-            margin-right: 40%;
         }
         .dos_imagen {
             grid-area: dos_imagen;
-            height: 90%;
-            width: 55%;
         }
         .dos_texto {
             grid-area: dos_texto;
-            margin-top: 12%;
-            margin-left: 40%;
         }
         .tres_imagen {
             grid-area: tres_imagen;
-            margin-left: 60%;
-            height: 90%;
-            width: 25%;
         }
         .tres_texto {
             grid-area: tres_texto;
-            margin-top: 12%;
-            margin-right: 40%;
         }
         .cuatro_imagen {
             grid-area: cuatro_imagen;
-            height: 90%;
-            width: 55%;
         }
         .cuatro_texto {
             grid-area: cuatro_texto;
-            margin-top: 12%;
-            margin-left: 40%;
         }
     }
 }
