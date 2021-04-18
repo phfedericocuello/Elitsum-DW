@@ -6,32 +6,6 @@ $celeste: #ae8cee;
     background-image: url(../../media/1.png);
 }
 
-%carrusel-activo {
-    .body_carrusel {
-        flex-basis: 30%;
-        z-index: 1;
-        .carousel {
-            .carousel-item {
-                height: 500px;
-                img {
-                    position: absolute;
-                    object-fit: cover;
-                    left: 0;
-                    top: 0;
-                    min-height: 500px;
-                }
-                .carousel-caption {
-                    margin-bottom: 7%;
-                    font-size: 150%;
-                    p {
-                        margin-top: 2%;
-                    }
-                }
-            }
-        }
-    }
-}
-
 %carrusel-banner {
     .body_carrusel-banner {
         flex-basis: 30%;

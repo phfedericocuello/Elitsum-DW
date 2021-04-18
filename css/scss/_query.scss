@@ -3,10 +3,26 @@
     .body_header {
         width: 100%;
         .header_logo {
+            flex-basis: 30%;
             .logo {
-                width: 65%;
-                height: 30%;
-                margin-top: 38%;
+                width: 100%;
+                height: 100%;
+                margin-top: 0%;
+            }
+        }
+        nav {
+            flex-basis: 70%;
+            margin-left: 10%;
+            .nav {
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                margin-top: 3%;
+                .nav-item {
+                    a {
+                        font-size: 50%;
+                        padding: 5%;
+                    }
+                }
             }
         }
     }
@@ -430,14 +446,16 @@
             margin-top: 3%;
         }
         .contenido_imagen {
-            margin-left: 35%;
-            width: 35%;
+            margin-left: 30%;
+            width: 45%;
+            margin-top: 15%;
+            margin-bottom: 10%;
         }
         .contenido_principal {
             margin-bottom: 13.6%;
             .contenido_formulario {
                 margin-top: 5%;
-                margin-bottom: 15%;
+                margin-bottom: 13%;
                 width: 100%;
                 .nombre {
                     width: 80%;
@@ -446,26 +464,26 @@
                 }
                 .apellido {
                     width: 80%;
-                    margin-top: 5%;
+                    margin-top: 10%;
                     margin-left: 10%;
                 }
                 .email {
                     width: 80%;
-                    margin-top: 5%;
+                    margin-top: 10%;
                     margin-left: 10%;
                 }
                 .mensaje {
                     width: 80%;
-                    margin-top: 5%;
+                    margin-top: 10%;
                     margin-left: 10%;
                 }
                 .enviar {
                     margin-left: 22%;
-                    margin-top: 5%;
+                    margin-top: 10%;
                 }
                 .limpiar {
-                    margin-left: 20%;
-                    margin-top: 5%;
+                    margin-left: 22%;
+                    margin-top: 10%;
                 }
                 label {
                     color: #ffffff;
@@ -487,6 +505,7 @@
             }
         }
         .nav {
+            justify-content: end;
             flex-wrap: nowrap;
             a {
                 height: 99%;
@@ -931,54 +950,53 @@
             font-size: 150%;
         }
     }
-}
-
-.body-contacto {
-    width: 100%;
-    height: 100%;
-    .contacto_contenido {
-        margin-top: 15%;
-    }
-    .contenido_imagen {
-        margin-left: 35%;
-        width: 35%;
-    }
-    .contenido_principal {
-        margin-bottom: 13.6%;
-        .contenido_formulario {
-            margin-top: 5%;
-            margin-bottom: 17%;
-            width: 100%;
-            .nombre {
-                width: 80%;
+    .body-contacto {
+        width: 100%;
+        height: 100%;
+        .contacto_contenido {
+            margin-top: 15%;
+        }
+        .contenido_imagen {
+            margin-left: 35%;
+            width: 35%;
+        }
+        .contenido_principal {
+            margin-bottom: 13.6%;
+            .contenido_formulario {
                 margin-top: 5%;
-                margin-left: 10%;
-            }
-            .apellido {
-                width: 80%;
-                margin-top: 5%;
-                margin-left: 10%;
-            }
-            .email {
-                width: 80%;
-                margin-top: 5%;
-                margin-left: 10%;
-            }
-            .mensaje {
-                width: 80%;
-                margin-top: 5%;
-                margin-left: 10%;
-            }
-            .enviar {
-                margin-left: 22%;
-                margin-top: 5%;
-            }
-            .limpiar {
-                margin-left: 20%;
-                margin-top: 5%;
-            }
-            label {
-                color: #ffffff;
+                margin-bottom: 17%;
+                width: 100%;
+                .nombre {
+                    width: 80%;
+                    margin-top: 5%;
+                    margin-left: 10%;
+                }
+                .apellido {
+                    width: 80%;
+                    margin-top: 5%;
+                    margin-left: 10%;
+                }
+                .email {
+                    width: 80%;
+                    margin-top: 5%;
+                    margin-left: 10%;
+                }
+                .mensaje {
+                    width: 80%;
+                    margin-top: 5%;
+                    margin-left: 10%;
+                }
+                .enviar {
+                    margin-left: 22%;
+                    margin-top: 5%;
+                }
+                .limpiar {
+                    margin-left: 20%;
+                    margin-top: 5%;
+                }
+                label {
+                    color: #ffffff;
+                }
             }
         }
     }
@@ -994,6 +1012,7 @@
             }
         }
         .nav {
+            justify-content: flex-end;
             flex-wrap: nowrap;
             a {
                 height: 99%;
@@ -1003,10 +1022,30 @@
     .body-index {
         width: 100%;
         height: 100%;
-        .carousel-caption {
-            font-size: 150%;
-            p {
-                margin-top: 2%;
+        .body_carrusel {
+            flex-basis: 30%;
+            z-index: 1;
+            .carousel {
+                .carousel-item {
+                    height: 500px;
+                    img {
+                        position: absolute;
+                        object-fit: cover;
+                        left: 0;
+                        top: 0;
+                        min-height: 500px;
+                    }
+                    .btn {
+                        background-color: $celeste;
+                    }
+                    .carousel-caption {
+                        margin-bottom: 7%;
+                        font-size: 150%;
+                        p {
+                            margin-top: 2%;
+                        }
+                    }
+                }
             }
         }
         .body_yo {
@@ -1099,6 +1138,7 @@
         }
     }
     .body-portfolio {
+        background-image: url(../../media/1.png);
         .carousel-caption {
             font-size: 150%;
             p {
@@ -1125,6 +1165,8 @@
                 margin-right: 5%;
                 text-align: center;
                 font-size: 150%;
+                background-color: white;
+                height: 30%;
             }
             .dos_imagen {
                 height: 60%;
@@ -1136,19 +1178,22 @@
                 margin-left: 5%;
                 font-size: 150%;
                 text-align: center;
+                background-color: white;
+                height: 30%;
             }
             .tres_imagen {
                 margin-left: 30%;
                 height: 80%;
                 margin-top: 15%;
                 width: 60%;
-                ;
             }
             .tres_texto {
                 margin-top: 35%;
                 margin-right: 5%;
                 text-align: center;
                 font-size: 150%;
+                background-color: white;
+                height: 30%;
             }
             .cuatro_imagen {
                 height: 60%;
@@ -1160,6 +1205,8 @@
                 margin-left: 5%;
                 font-size: 150%;
                 text-align: center;
+                background-color: white;
+                height: 30%;
             }
         }
     }
@@ -1437,39 +1484,54 @@
     .body-contacto {
         width: 100%;
         height: 100%;
-        .contenido_imagen {
-            margin-left: 45%;
-            height: 15%;
-            width: 15%;
-        }
-        .contenido_principal {
-            .contenido_formulario {
-                margin-left: 35;
-                width: 100%;
-                .nombre {
-                    width: 50%;
-                    margin-left: 10%;
+        .contacto_contenido {
+            margin-top: 0;
+            .contenido_imagen {
+                margin-left: 42%;
+                height: 15%;
+                width: 15%;
+                img {
+                    width: 110%;
+                    margin-top: 10%;
+                    margin-bottom: 10%;
                 }
-                .apellido {
-                    width: 50%;
-                    margin-left: 10%;
-                }
-                .email {
-                    width: 50%;
-                    margin-left: 10%;
-                }
-                .mensaje {
-                    width: 50%;
-                    margin-left: 10%;
-                }
-                .enviar {
-                    margin-left: 5%;
-                }
-                .limpiar {
+            }
+            .contenido_principal {
+                margin-bottom: 0;
+                .contenido_formulario {
                     margin-left: 15%;
-                }
-                label {
-                    color: #ffffff;
+                    width: 100%;
+                    margin-top: 0%;
+                    margin-bottom: 0%;
+                    .nombre {
+                        width: 50%;
+                        margin-left: 10%;
+                        margin-top: 0%;
+                    }
+                    .apellido {
+                        width: 50%;
+                        margin-left: 10%;
+                        margin-top: 0%;
+                    }
+                    .email {
+                        width: 50%;
+                        margin-left: 10%;
+                        margin-top: 0%;
+                    }
+                    .mensaje {
+                        width: 50%;
+                        margin-left: 10%;
+                        margin-top: 0;
+                    }
+                    .enviar {
+                        margin-left: 20%;
+                    }
+                    .limpiar {
+                        margin-left: 15%;
+                    }
+                    label {
+                        color: #ffffff;
+                    }
                 }
             }
         }
