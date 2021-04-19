@@ -2448,6 +2448,9 @@ a {
     margin-left: 10%;
     background-color: white;
   }
+  .body-about .body_columnas-about .columnas_vision .vision_titulo {
+    text-align: center;
+  }
   .body-about .body_columnas-about .columnas_vision .vision_texto {
     text-align: center;
     width: 100%;
@@ -2461,6 +2464,9 @@ a {
     background-color: white;
     margin-left: 2%;
   }
+  .body-about .body_columnas-about .columnas_historia .historia_titulo {
+    text-align: center;
+  }
   .body-about .body_columnas-about .columnas_historia .historia_texto {
     text-align: center;
     width: 100%;
@@ -2473,6 +2479,9 @@ a {
   .body-about .body_columnas-about .columnas_valores {
     background-color: white;
     margin-left: 2%;
+  }
+  .body-about .body_columnas-about .columnas_valores .valores_titulo {
+    text-align: center;
   }
   .body-about .body_columnas-about .columnas_valores .valores_texto {
     text-align: center;

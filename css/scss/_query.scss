@@ -1327,6 +1327,9 @@
             .columnas_vision {
                 margin-left: 10%;
                 background-color: white;
+                .vision_titulo {
+                    text-align: center;
+                }
                 .vision_texto {
                     text-align: center;
                     width: 100%;
@@ -1340,6 +1343,9 @@
             .columnas_historia {
                 background-color: white;
                 margin-left: 2%;
+                .historia_titulo {
+                    text-align: center;
+                }
                 .historia_texto {
                     text-align: center;
                     width: 100%;
@@ -1353,6 +1359,9 @@
             .columnas_valores {
                 background-color: white;
                 margin-left: 2%;
+                .valores_titulo {
+                    text-align: center;
+                }
                 .valores_texto {
                     text-align: center;
                     width: 100%;
