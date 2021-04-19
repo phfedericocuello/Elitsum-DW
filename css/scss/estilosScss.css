@@ -523,7 +523,7 @@ a {
       grid-template-rows: 21.3% 5% 21.3% 5% 21.3% 5% 21.3% 5%;
   -ms-grid-columns: 45% 10% 45%;
       grid-template-columns: 45% 10% 45%;
-      grid-template-areas: "uno_imagen . uno_texto" ". . ." "dos_texto . dos_imagen" ". . ." "tres_imagen . tres_texto" ". . ." "cuatro_texto . cuatro_imagen";
+      grid-template-areas: "uno_imagen . uno_texto" "separadorUno separadorUno separadorUno" "dos_texto . dos_imagen" "separadorDos separadorDos separadorDos" "tres_imagen . tres_texto" "separadorTres separadorTres separadorTres" "cuatro_texto . cuatro_imagen";
 }
 
 .body-portfolio .portfolio_trabajos .uno_imagen {
@@ -538,6 +538,13 @@ a {
   grid-area: uno_texto;
 }
 
+.body-portfolio .portfolio_trabajos .trabajos_separador1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: separadorUno;
+}
+
 .body-portfolio .portfolio_trabajos .dos_imagen {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
@@ -550,6 +557,13 @@ a {
   grid-area: dos_texto;
 }
 
+.body-portfolio .portfolio_trabajos .trabajos_separador2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: separadorDos;
+}
+
 .body-portfolio .portfolio_trabajos .tres_imagen {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
@@ -560,6 +574,13 @@ a {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
   grid-area: tres_texto;
+}
+
+.body-portfolio .portfolio_trabajos .trabajos_separador3 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: separadorTres;
 }
 
 .body-portfolio .portfolio_trabajos .cuatro_imagen {
@@ -676,11 +697,11 @@ a {
       flex-basis: 33.3%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33% 33% 33%;
-      grid-template-columns: 33% 33% 33%;
+  -ms-grid-columns: 30% 5% 30% 5% 30%;
+      grid-template-columns: 30% 5% 30% 5% 30%;
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
-      grid-template-areas: "nombres marca exp" "nombres marca exp";
+      grid-template-areas: "nombres llaveUno marca llaveDos exp" "nombres llaveUno marca llaveDos exp";
   justify-items: center;
 }
 
@@ -691,17 +712,31 @@ a {
   grid-area: nombres;
 }
 
-.body-about .body_logo .logo_marca {
+.body-about .body_logo .logo_llave-uno {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
+  grid-area: llaveUno;
+}
+
+.body-about .body_logo .logo_marca {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
   grid-area: marca;
+}
+
+.body-about .body_logo .logo_llaveDno {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: llaveDos;
 }
 
 .body-about .body_logo .logo_explicacion {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
+  -ms-grid-column: 5;
   grid-area: exp;
 }
 
@@ -1117,6 +1152,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-right: 1.7%;
   }
   .body-index .body_resumen .resumen_uno {
     margin-left: 0;
@@ -1128,6 +1164,8 @@ a {
   .body-index .body_resumen .resumen_uno .uno_titulo {
     margin-left: 10%;
     padding-left: 3%;
+    font-size: 100%;
+    text-align: center;
   }
   .body-index .body_resumen .resumen_uno img {
     height: 40%;
@@ -1140,6 +1178,8 @@ a {
   }
   .body-index .body_resumen .resumen_dos .dos_titulo {
     margin-left: 8%;
+    font-size: 100%;
+    text-align: center;
   }
   .body-index .body_resumen .resumen_dos img {
     height: 40%;
@@ -1151,7 +1191,9 @@ a {
     font-size: 80%;
   }
   .body-index .body_resumen .resumen_tres .tres_titulo {
-    margin-left: 15%;
+    margin-left: 10%;
+    font-size: 100%;
+    text-align: center;
   }
   .body-index .body_resumen .resumen_tres img {
     height: 40%;
@@ -1262,13 +1304,19 @@ a {
     font-size: 80%;
     margin-left: 0%;
     text-align: center;
+    margin-top: 550%;
   }
   .body-about .body_logo .logo_nombres .nombres_mas {
     margin-left: 40%;
   }
   .body-about .body_logo .logo_nombres h4 {
     font-size: 80%;
-    margin-top: 350%;
+    margin-top: 100%;
+  }
+  .body-about .body_logo .llave_alineacion {
+    margin-top: 1300%;
+    color: #ae8cee;
+    font-size: 200%;
   }
   .body-about .body_logo .logo_marca {
     margin-top: 5%;
@@ -1282,15 +1330,17 @@ a {
   .body-about .body_logo .logo_marca p {
     margin-top: 3%;
     font-size: 80%;
+    text-align: center;
   }
   .body-about .body_logo .logo_marca .marca_titulo {
     font-size: 150%;
     margin-top: 1%;
     text-shadow: 2px 2px #ae8cee;
+    text-align: center;
   }
   .body-about .body_logo .logo_explicacion .explicacion_texto {
-    margin-top: 10%;
-    font-size: 80%;
+    margin-top: 100%;
+    font-size: 60%;
     text-align: center;
   }
   .body-about .body_columnas-about {
@@ -1365,7 +1415,7 @@ a {
   }
   .body-servicios .body_design .design_imagen {
     height: 100%;
-    width: 65%;
+    width: 90%;
   }
   .body-servicios .body_design .design_imagen img {
     width: 120%;
@@ -1382,7 +1432,7 @@ a {
   .body-servicios .body_design .design_brand {
     margin-left: 2%;
     height: 100%;
-    width: 65%;
+    width: 90%;
   }
   .body-servicios .body_design .design_brand img {
     width: 120%;
@@ -1398,7 +1448,7 @@ a {
   }
   .body-servicios .body_design .design_redes {
     height: 100%;
-    width: 65%;
+    width: 90%;
   }
   .body-servicios .body_design .design_redes img {
     width: 95%;
@@ -1413,7 +1463,7 @@ a {
     font-size: 80%;
   }
   .body-servicios .body_programacion-titulo {
-    margin-left: 10%;
+    text-align: center;
     margin-top: 15%;
     text-shadow: 2px 2px #ae8cee;
   }
@@ -1495,7 +1545,7 @@ a {
     text-align: center;
   }
   .body-servicios .body_asesoramiento-titulo {
-    margin-left: 25%;
+    text-align: center;
     margin-top: 20%;
     text-shadow: 2px 2px #ae8cee;
   }
@@ -1562,7 +1612,7 @@ a {
     margin-left: 10%;
   }
   .body-contacto .contenido_principal .contenido_formulario .enviar {
-    margin-left: 22%;
+    margin-left: 23.5%;
     margin-top: 10%;
   }
   .body-contacto .contenido_principal .contenido_formulario .limpiar {
@@ -1600,6 +1650,8 @@ a {
   .body-index .carousel-caption {
     margin-bottom: 17% !important;
     font-size: 150%;
+    background-color: white;
+    border-radius: 8%;
   }
   .body-index .carousel-caption p {
     font-size: 80%;
@@ -1681,7 +1733,7 @@ a {
     font-size: 300%;
   }
   .body-index .body_about .about_texto {
-    width: 100%;
+    width: 80%;
     margin-left: 10%;
     font-size: 80%;
   }
@@ -1772,14 +1824,19 @@ a {
     font-size: 150%;
     margin-left: 0%;
     text-align: center;
-    margin-top: 80%;
+    margin-top: 170%;
   }
   .body-about .body_logo .logo_nombres .nombres_mas {
     margin-left: 40%;
   }
   .body-about .body_logo .logo_nombres h4 {
     font-size: 150%;
-    margin-top: 200%;
+    margin-top: 100%;
+  }
+  .body-about .body_logo .llave_alineacion {
+    margin-top: 1000%;
+    color: #ae8cee;
+    font-size: 400%;
   }
   .body-about .body_logo .logo_marca {
     margin-top: 5%;
@@ -1787,23 +1844,26 @@ a {
   .body-about .body_logo .logo_marca .logo {
     height: 150%;
     width: 45%;
-    margin-left: 15%;
+    margin-left: 30%;
     margin-top: 40%;
   }
   .body-about .body_logo .logo_marca p {
     margin-top: 3%;
     font-size: 150%;
+    text-align: center;
   }
   .body-about .body_logo .logo_marca .marca_titulo {
     font-size: 300%;
     margin-top: 1%;
     margin-left: 5%;
     text-shadow: 2px 2px #ae8cee;
+    text-align: center;
   }
   .body-about .body_logo .logo_explicacion .explicacion_texto {
-    margin-top: 10%;
-    font-size: 150%;
+    margin-top: 35%;
+    font-size: 130%;
     text-align: center;
+    margin-right: 5%;
   }
   .body-about .body_columnas-about {
     margin-top: 5%;
@@ -1925,7 +1985,7 @@ a {
     font-size: 150%;
   }
   .body_programacion-titulo {
-    margin-left: 10%;
+    text-align: center;
     margin-top: 15%;
     text-shadow: 2px 2px #ae8cee;
     font-size: 300%;
@@ -2053,7 +2113,7 @@ a {
     width: 35%;
   }
   .body-contacto .contenido_principal {
-    margin-bottom: 13.6%;
+    margin-bottom: 16%;
   }
   .body-contacto .contenido_principal .contenido_formulario {
     margin-top: 5%;
@@ -2109,6 +2169,16 @@ a {
   }
   .body_header .nav a {
     height: 99%;
+  }
+  .body_footer {
+    -ms-flex-preferred-size: 5%;
+        flex-basis: 5%;
+    background-color: black;
+    bottom: 0;
+  }
+  .body_footer .footer_texto {
+    text-align: center;
+    color: white;
   }
   .body-index {
     width: 100%;
@@ -2200,7 +2270,7 @@ a {
     margin-left: 47%;
   }
   .body-index .body_about .about_titulo {
-    margin-left: 35%;
+    text-align: center;
     margin-top: 7%;
     text-shadow: #ae8cee 2px 2px;
     font-size: 250%;
@@ -2253,6 +2323,11 @@ a {
     background-color: white;
     height: 30%;
   }
+  .body-portfolio .portfolio_trabajos .trabajos_separador1 {
+    color: #ae8cee;
+    margin-top: 7%;
+    text-align: center;
+  }
   .body-portfolio .portfolio_trabajos .dos_imagen {
     height: 60%;
     width: 90%;
@@ -2265,6 +2340,11 @@ a {
     text-align: center;
     background-color: white;
     height: 30%;
+  }
+  .body-portfolio .portfolio_trabajos .trabajos_separador2 {
+    color: #ae8cee;
+    margin-top: 7%;
+    text-align: center;
   }
   .body-portfolio .portfolio_trabajos .tres_imagen {
     margin-left: 30%;
@@ -2279,6 +2359,11 @@ a {
     font-size: 150%;
     background-color: white;
     height: 30%;
+  }
+  .body-portfolio .portfolio_trabajos .trabajos_separador3 {
+    color: #ae8cee;
+    margin-top: 7%;
+    text-align: center;
   }
   .body-portfolio .portfolio_trabajos .cuatro_imagen {
     height: 60%;
@@ -2298,24 +2383,29 @@ a {
     height: 100%;
   }
   .body-about .body_logo .logo_nombres .nombres_elit {
-    font-size: 200%;
+    font-size: 250%;
     margin-left: 0%;
     text-align: center;
-    margin-top: 120%;
+    margin-top: 80%;
   }
   .body-about .body_logo .logo_nombres .nombres_mas {
     margin-left: 40%;
   }
   .body-about .body_logo .logo_nombres h4 {
-    font-size: 200%;
+    font-size: 250%;
     margin-top: 5%;
+  }
+  .body-about .body_logo .llave_alineacion {
+    margin-top: 600%;
+    font-size: 400%;
+    color: #ae8cee;
   }
   .body-about .body_logo .logo_marca {
     margin-top: 5%;
   }
   .body-about .body_logo .logo_marca .logo {
     width: 30%;
-    margin-left: 37%;
+    margin-left: 38%;
   }
   .body-about .body_logo .logo_marca p {
     margin-top: 3%;
@@ -2333,6 +2423,7 @@ a {
     font-size: 150%;
     text-align: center;
     margin-left: 10%;
+    margin-right: 10%;
   }
   .body-about .body_columnas-about {
     margin-top: 5%;
@@ -2602,7 +2693,7 @@ a {
     margin-left: 15%;
     width: 100%;
     margin-top: 0%;
-    margin-bottom: 0%;
+    margin-bottom: 10%;
   }
   .body-contacto .contacto_contenido .contenido_principal .contenido_formulario .nombre {
     width: 50%;
@@ -2626,9 +2717,11 @@ a {
   }
   .body-contacto .contacto_contenido .contenido_principal .contenido_formulario .enviar {
     margin-left: 20%;
+    margin-top: 5%;
   }
   .body-contacto .contacto_contenido .contenido_principal .contenido_formulario .limpiar {
     margin-left: 15%;
+    margin-top: 5%;
   }
   .body-contacto .contacto_contenido .contenido_principal .contenido_formulario label {
     color: #ffffff;

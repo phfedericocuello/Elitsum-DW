@@ -7,15 +7,21 @@
     .body_logo {
         flex-basis: 33.3%;
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 30% 5% 30% 5% 30%;
         grid-template-rows: 50% 50%;
-        grid-template-areas: "nombres marca exp" "nombres marca exp";
+        grid-template-areas: "nombres llaveUno marca llaveDos exp" "nombres llaveUno marca llaveDos exp";
         justify-items: center;
         .logo_nombres {
             grid-area: nombres;
         }
+        .logo_llave-uno {
+            grid-area: llaveUno;
+        }
         .logo_marca {
             grid-area: marca;
+        }
+        .logo_llaveDno {
+            grid-area: llaveDos;
         }
         .logo_explicacion {
             grid-area: exp;

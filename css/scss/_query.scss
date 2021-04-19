@@ -47,6 +47,7 @@
         }
         .body_resumen {
             justify-content: space-between;
+            margin-right: 1.7%;
             .resumen_uno {
                 margin-left: 0;
                 width: 70%;
@@ -56,6 +57,8 @@
                 .uno_titulo {
                     margin-left: 10%;
                     padding-left: 3%;
+                    font-size: 100%;
+                    text-align: center;
                 }
                 img {
                     height: 40%;
@@ -70,6 +73,8 @@
                 }
                 .dos_titulo {
                     margin-left: 8%;
+                    font-size: 100%;
+                    text-align: center;
                 }
                 img {
                     height: 40%;
@@ -83,7 +88,9 @@
                     font-size: 80%;
                 }
                 .tres_titulo {
-                    margin-left: 15%;
+                    margin-left: 10%;
+                    font-size: 100%;
+                    text-align: center;
                 }
                 img {
                     height: 40%;
@@ -196,14 +203,20 @@
                     font-size: 80%;
                     margin-left: 0%;
                     text-align: center;
+                    margin-top: 550%;
                 }
                 .nombres_mas {
                     margin-left: 40%;
                 }
                 h4 {
                     font-size: 80%;
-                    margin-top: 350%;
+                    margin-top: 100%;
                 }
+            }
+            .llave_alineacion {
+                margin-top: 1300%;
+                color: #ae8cee;
+                font-size: 200%;
             }
             .logo_marca {
                 margin-top: 5%;
@@ -216,17 +229,19 @@
                 p {
                     margin-top: 3%;
                     font-size: 80%;
+                    text-align: center;
                 }
                 .marca_titulo {
                     font-size: 150%;
                     margin-top: 1%;
                     text-shadow: 2px 2px #ae8cee;
+                    text-align: center;
                 }
             }
             .logo_explicacion {
                 .explicacion_texto {
-                    margin-top: 10%;
-                    font-size: 80%;
+                    margin-top: 100%;
+                    font-size: 60%;
                     text-align: center;
                 }
             }
@@ -297,7 +312,7 @@
             justify-items: center;
             .design_imagen {
                 height: 100%;
-                width: 65%;
+                width: 90%;
                 img {
                     width: 120%;
                 }
@@ -314,7 +329,7 @@
             .design_brand {
                 margin-left: 2%;
                 height: 100%;
-                width: 65%;
+                width: 90%;
                 img {
                     width: 120%;
                 }
@@ -330,7 +345,7 @@
             }
             .design_redes {
                 height: 100%;
-                width: 65%;
+                width: 90%;
                 img {
                     width: 95%;
                 }
@@ -346,7 +361,7 @@
             }
         }
         .body_programacion-titulo {
-            margin-left: 10%;
+            text-align: center;
             margin-top: 15%;
             text-shadow: 2px 2px #ae8cee;
         }
@@ -416,7 +431,7 @@
             }
         }
         .body_asesoramiento-titulo {
-            margin-left: 25%;
+            text-align: center;
             margin-top: 20%;
             text-shadow: 2px 2px #ae8cee;
         }
@@ -478,7 +493,7 @@
                     margin-left: 10%;
                 }
                 .enviar {
-                    margin-left: 22%;
+                    margin-left: 23.5%;
                     margin-top: 10%;
                 }
                 .limpiar {
@@ -518,6 +533,8 @@
         .carousel-caption {
             margin-bottom: 17% !important;
             font-size: 150%;
+            background-color: white;
+            border-radius: 8%;
             p {
                 font-size: 80%;
                 margin-top: 2%;
@@ -602,7 +619,7 @@
                 font-size: 300%;
             }
             .about_texto {
-                width: 100%;
+                width: 80%;
                 margin-left: 10%;
                 font-size: 80%;
             }
@@ -696,40 +713,48 @@
                     font-size: 150%;
                     margin-left: 0%;
                     text-align: center;
-                    margin-top: 80%;
+                    margin-top: 170%;
                 }
                 .nombres_mas {
                     margin-left: 40%;
                 }
                 h4 {
                     font-size: 150%;
-                    margin-top: 200%;
+                    margin-top: 100%;
                 }
+            }
+            .llave_alineacion {
+                margin-top: 1000%;
+                color: #ae8cee;
+                font-size: 400%;
             }
             .logo_marca {
                 margin-top: 5%;
                 .logo {
                     height: 150%;
                     width: 45%;
-                    margin-left: 15%;
+                    margin-left: 30%;
                     margin-top: 40%;
                 }
                 p {
                     margin-top: 3%;
                     font-size: 150%;
+                    text-align: center;
                 }
                 .marca_titulo {
                     font-size: 300%;
                     margin-top: 1%;
                     margin-left: 5%;
                     text-shadow: 2px 2px #ae8cee;
+                    text-align: center;
                 }
             }
             .logo_explicacion {
                 .explicacion_texto {
-                    margin-top: 10%;
-                    font-size: 150%;
+                    margin-top: 35%;
+                    font-size: 130%;
                     text-align: center;
+                    margin-right: 5%;
                 }
             }
         }
@@ -849,7 +874,7 @@
         }
     }
     .body_programacion-titulo {
-        margin-left: 10%;
+        text-align: center;
         margin-top: 15%;
         text-shadow: 2px 2px #ae8cee;
         font-size: 300%;
@@ -961,7 +986,7 @@
             width: 35%;
         }
         .contenido_principal {
-            margin-bottom: 13.6%;
+            margin-bottom: 16%;
             .contenido_formulario {
                 margin-top: 5%;
                 margin-bottom: 17%;
@@ -1017,6 +1042,15 @@
             a {
                 height: 99%;
             }
+        }
+    }
+    .body_footer {
+        flex-basis: 5%;
+        background-color: black;
+        bottom: 0;
+        .footer_texto {
+            text-align: center;
+            color: white;
         }
     }
     .body-index {
@@ -1115,7 +1149,7 @@
         }
         .body_about {
             .about_titulo {
-                margin-left: 35%;
+                text-align: center;
                 margin-top: 7%;
                 text-shadow: rgb(174, 140, 238) 2px 2px;
                 font-size: 250%;
@@ -1168,6 +1202,11 @@
                 background-color: white;
                 height: 30%;
             }
+            .trabajos_separador1 {
+                color: #ae8cee;
+                margin-top: 7%;
+                text-align: center;
+            }
             .dos_imagen {
                 height: 60%;
                 width: 90%;
@@ -1180,6 +1219,11 @@
                 text-align: center;
                 background-color: white;
                 height: 30%;
+            }
+            .trabajos_separador2 {
+                color: #ae8cee;
+                margin-top: 7%;
+                text-align: center;
             }
             .tres_imagen {
                 margin-left: 30%;
@@ -1194,6 +1238,11 @@
                 font-size: 150%;
                 background-color: white;
                 height: 30%;
+            }
+            .trabajos_separador3 {
+                color: #ae8cee;
+                margin-top: 7%;
+                text-align: center;
             }
             .cuatro_imagen {
                 height: 60%;
@@ -1216,24 +1265,29 @@
         .body_logo {
             .logo_nombres {
                 .nombres_elit {
-                    font-size: 200%;
+                    font-size: 250%;
                     margin-left: 0%;
                     text-align: center;
-                    margin-top: 120%;
+                    margin-top: 80%;
                 }
                 .nombres_mas {
                     margin-left: 40%;
                 }
                 h4 {
-                    font-size: 200%;
+                    font-size: 250%;
                     margin-top: 5%;
                 }
+            }
+            .llave_alineacion {
+                margin-top: 600%;
+                font-size: 400%;
+                color: #ae8cee;
             }
             .logo_marca {
                 margin-top: 5%;
                 .logo {
                     width: 30%;
-                    margin-left: 37%;
+                    margin-left: 38%;
                 }
                 p {
                     margin-top: 3%;
@@ -1253,6 +1307,7 @@
                     font-size: 150%;
                     text-align: center;
                     margin-left: 10%;
+                    margin-right: 10%;
                 }
             }
         }
@@ -1502,7 +1557,7 @@
                     margin-left: 15%;
                     width: 100%;
                     margin-top: 0%;
-                    margin-bottom: 0%;
+                    margin-bottom: 10%;
                     .nombre {
                         width: 50%;
                         margin-left: 10%;
@@ -1525,9 +1580,11 @@
                     }
                     .enviar {
                         margin-left: 20%;
+                        margin-top: 5%;
                     }
                     .limpiar {
                         margin-left: 15%;
+                        margin-top: 5%;
                     }
                     label {
                         color: #ffffff;
