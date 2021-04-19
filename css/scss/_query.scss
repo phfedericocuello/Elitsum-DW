@@ -519,11 +519,18 @@
                 margin-top: 1%;
             }
         }
-        .nav {
-            justify-content: end;
-            flex-wrap: nowrap;
-            a {
-                height: 99%;
+        nav {
+            flex-basis: 70%;
+            margin-left: 10%;
+            .nav {
+                flex-wrap: nowrap;
+                justify-content: end;
+                .nav-item {
+                    a {
+                        font-size: 50%;
+                        padding: 5%;
+                    }
+                }
             }
         }
     }
@@ -1051,6 +1058,16 @@
         .footer_texto {
             text-align: center;
             color: white;
+            margin-bottom: 0.5%;
+        }
+        .footer_redes {
+            flex-basis: 50%;
+            text-align: center;
+            margin-bottom: 0.5%;
+            a {
+                text-decoration: none;
+                color: #ae8cee;
+            }
         }
     }
     .body-index {
@@ -1127,7 +1144,7 @@
                     width: 70%;
                 }
                 .dos_titulo {
-                    margin-left: 8%;
+                    margin-left: 15%;
                     font-size: 150%;
                 }
             }
@@ -1201,6 +1218,9 @@
                 font-size: 150%;
                 background-color: white;
                 height: 30%;
+                .uno_titulo {
+                    font-size: 200%;
+                }
             }
             .trabajos_separador1 {
                 color: #ae8cee;
@@ -1219,6 +1239,9 @@
                 text-align: center;
                 background-color: white;
                 height: 30%;
+                .dos_titulo {
+                    font-size: 200%;
+                }
             }
             .trabajos_separador2 {
                 color: #ae8cee;
@@ -1238,6 +1261,9 @@
                 font-size: 150%;
                 background-color: white;
                 height: 30%;
+                .tres_titulo {
+                    font-size: 200%;
+                }
             }
             .trabajos_separador3 {
                 color: #ae8cee;
@@ -1256,6 +1282,9 @@
                 text-align: center;
                 background-color: white;
                 height: 30%;
+                .cuatro_titulo {
+                    font-size: 200%;
+                }
             }
         }
     }
@@ -1292,7 +1321,8 @@
                 p {
                     margin-top: 3%;
                     font-size: 150%;
-                    margin-left: 25%;
+                    text-align: center;
+                    margin-left: 10%;
                 }
                 .marca_titulo {
                     font-size: 300%;

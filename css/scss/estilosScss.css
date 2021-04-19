@@ -153,9 +153,18 @@
       flex-basis: 5%;
   background-color: black;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .body_footer .footer_texto {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   text-align: center;
   color: white;
 }
@@ -1633,15 +1642,21 @@ a {
     height: 80%;
     margin-top: 1%;
   }
-  .body_header .nav {
+  .body_header nav {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    margin-left: 10%;
+  }
+  .body_header nav .nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
-  .body_header .nav a {
-    height: 99%;
+  .body_header nav .nav .nav-item a {
+    font-size: 50%;
+    padding: 5%;
   }
   .body-index {
     width: 100%;
@@ -2179,6 +2194,17 @@ a {
   .body_footer .footer_texto {
     text-align: center;
     color: white;
+    margin-bottom: 0.5%;
+  }
+  .body_footer .footer_redes {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    text-align: center;
+    margin-bottom: 0.5%;
+  }
+  .body_footer .footer_redes a {
+    text-decoration: none;
+    color: #ae8cee;
   }
   .body-index {
     width: 100%;
@@ -2255,7 +2281,7 @@ a {
     width: 70%;
   }
   .body-index .body_resumen .resumen_dos .dos_titulo {
-    margin-left: 8%;
+    margin-left: 15%;
     font-size: 150%;
   }
   .body-index .body_resumen .resumen_tres .tres_texto {
@@ -2323,6 +2349,9 @@ a {
     background-color: white;
     height: 30%;
   }
+  .body-portfolio .portfolio_trabajos .uno_texto .uno_titulo {
+    font-size: 200%;
+  }
   .body-portfolio .portfolio_trabajos .trabajos_separador1 {
     color: #ae8cee;
     margin-top: 7%;
@@ -2340,6 +2369,9 @@ a {
     text-align: center;
     background-color: white;
     height: 30%;
+  }
+  .body-portfolio .portfolio_trabajos .dos_texto .dos_titulo {
+    font-size: 200%;
   }
   .body-portfolio .portfolio_trabajos .trabajos_separador2 {
     color: #ae8cee;
@@ -2360,6 +2392,9 @@ a {
     background-color: white;
     height: 30%;
   }
+  .body-portfolio .portfolio_trabajos .tres_texto .tres_titulo {
+    font-size: 200%;
+  }
   .body-portfolio .portfolio_trabajos .trabajos_separador3 {
     color: #ae8cee;
     margin-top: 7%;
@@ -2377,6 +2412,9 @@ a {
     text-align: center;
     background-color: white;
     height: 30%;
+  }
+  .body-portfolio .portfolio_trabajos .cuatro_texto .cuatro_titulo {
+    font-size: 200%;
   }
   .body-about {
     width: 100%;
@@ -2410,7 +2448,8 @@ a {
   .body-about .body_logo .logo_marca p {
     margin-top: 3%;
     font-size: 150%;
-    margin-left: 25%;
+    text-align: center;
+    margin-left: 10%;
   }
   .body-about .body_logo .logo_marca .marca_titulo {
     font-size: 300%;
