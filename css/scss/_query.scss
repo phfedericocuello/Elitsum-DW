@@ -26,6 +26,25 @@
             }
         }
     }
+    .body_footer {
+        flex-basis: 5%;
+        background-color: black;
+        bottom: 0;
+        .footer_texto {
+            text-align: center;
+            color: white;
+            margin-bottom: 0.5%;
+        }
+        .footer_redes {
+            flex-basis: 50%;
+            text-align: center;
+            margin-bottom: 0.5%;
+            a {
+                text-decoration: none;
+                color: #ae8cee;
+            }
+        }
+    }
     .body-index {
         width: 100%;
         height: 100%;
@@ -55,15 +74,12 @@
                     font-size: 80%;
                 }
                 .uno_titulo {
-                    margin-left: 10%;
-                    padding-left: 3%;
                     font-size: 100%;
                     text-align: center;
                 }
                 img {
-                    height: 40%;
-                    width: 70%;
-                    margin-left: 10%;
+                    width: 60%;
+                    margin-left: 20%;
                     margin-bottom: 5%;
                 }
             }
@@ -72,14 +88,12 @@
                     font-size: 80%;
                 }
                 .dos_titulo {
-                    margin-left: 8%;
                     font-size: 100%;
                     text-align: center;
                 }
                 img {
-                    height: 40%;
-                    width: 40%;
-                    margin-left: 30%;
+                    width: 50%;
+                    margin-left: 20%;
                     margin-bottom: 5%;
                 }
             }
@@ -88,21 +102,20 @@
                     font-size: 80%;
                 }
                 .tres_titulo {
-                    margin-left: 10%;
                     font-size: 100%;
                     text-align: center;
                 }
                 img {
-                    height: 40%;
-                    width: 70%;
-                    margin-left: 15%;
+                    width: 80%;
+                    margin-left: 10%;
                     margin-bottom: 5%;
                 }
             }
         }
         .body_botonServicios {
             flex-basis: 20%;
-            margin-top: 40%;
+            margin-top: 10%;
+            margin-bottom: 20%;
             .boton {
                 margin-left: 35%;
             }
@@ -136,54 +149,64 @@
         }
         .body_titulo-portfolio {
             flex-basis: 10%;
-            margin-top: 30%;
-            font-size: 150%;
+            margin-top: 10%;
+            font-size: 200%;
             text-align: center;
         }
         .portfolio_trabajos {
             height: 100%;
-            margin-top: 5%;
-            height: 100%;
             margin-bottom: 40%;
             .uno_imagen {
-                margin-left: 10%;
-                height: 50%;
-                margin-top: 50%;
-                width: 90%;
+                margin-left: 3%;
+                margin-top: 130%;
+                width: 100%;
             }
             .uno_texto {
                 margin-top: 35%;
-                margin-right: 5%;
+                margin-right: 2%;
                 text-align: center;
             }
+            .trabajos_separador1 {
+                display: none;
+            }
+            .dos_titulo {
+                margin-top: 50%;
+            }
             .dos_imagen {
-                height: 30%;
-                width: 90%;
-                margin-top: 100%;
+                margin-right: 10%;
+                width: 97%;
+                margin-top: 200%;
             }
             .dos_texto {
                 margin-top: 12%;
-                margin-left: 5%;
+                margin-left: 2%;
                 text-align: center;
             }
+            .trabajos_separador2 {
+                display: none;
+            }
+            .tres_titulo {
+                margin-top: 50%;
+            }
             .tres_imagen {
-                margin-left: 10%;
-                height: 50%;
-                margin-top: 100%;
-                width: 90%;
+                margin-left: 3%;
+                margin-top: 150%;
+                width: 100%;
             }
             .tres_texto {
                 margin-top: 50%;
                 margin-right: 5%;
                 text-align: center;
             }
+            .trabajos_separador3 {
+                display: none;
+            }
             .cuatro_imagen {
-                height: 30%;
-                width: 90%;
-                margin-top: 100%;
+                margin-right: 10%;
+                width: 97%;
+                margin-top: 170%;
             }
             .cuatro_texto {
-                margin-top: 40%;
                 margin-left: 5%;
                 text-align: center;
             }
@@ -196,14 +219,13 @@
             display: none;
         }
         .body_logo {
-            margin-top: 22%;
             .logo_nombres {
                 margin-top: -85%;
                 .nombres_elit {
                     font-size: 80%;
                     margin-left: 0%;
                     text-align: center;
-                    margin-top: 550%;
+                    margin-top: 600%;
                 }
                 .nombres_mas {
                     margin-left: 40%;
@@ -240,7 +262,7 @@
             }
             .logo_explicacion {
                 .explicacion_texto {
-                    margin-top: 100%;
+                    margin-top: 120%;
                     font-size: 60%;
                     text-align: center;
                 }
@@ -259,11 +281,15 @@
             }
             .columnas_vision {
                 font-size: 80%;
+                margin-top: 15%;
                 .vision_texto {
                     text-align: center;
                     width: 100%;
                     padding-left: 20%;
                     padding-right: 20%;
+                }
+                .vision_titulo {
+                    margin-left: 32%;
                 }
                 img {
                     margin-left: 28%
@@ -277,17 +303,24 @@
                     padding-left: 20%;
                     padding-right: 20%;
                 }
+                .historia_titulo {
+                    margin-left: 32%;
+                }
                 img {
                     margin-left: 30%;
                 }
             }
             .columnas_valores {
                 margin-top: 10%;
+                margin-bottom: 30%;
                 .valores_texto {
                     text-align: center;
                     width: 100%;
                     padding-left: 20%;
                     padding-right: 20%;
+                }
+                .valores_titulo {
+                    margin-left: 23%;
                 }
                 img {
                     margin-left: 30%
@@ -302,7 +335,7 @@
             display: none;
         }
         .body_design-titulo {
-            margin-left: 17%;
+            text-align: center;
             margin-top: 10%;
             font-size: 230%;
             text-shadow: 2px 2px #ae8cee;
@@ -314,14 +347,14 @@
                 height: 100%;
                 width: 90%;
                 img {
-                    width: 120%;
+                    width: 79%;
                 }
                 p {
                     text-align: center;
                     font-size: 80%;
                 }
                 h4 {
-                    margin-top: 30%;
+                    margin-top: 21%;
                     font-size: 100%;
                     text-align: center;
                 }
@@ -331,7 +364,7 @@
                 height: 100%;
                 width: 90%;
                 img {
-                    width: 120%;
+                    width: 82%;
                 }
                 h4 {
                     margin-top: 30%;
@@ -347,10 +380,11 @@
                 height: 100%;
                 width: 90%;
                 img {
-                    width: 95%;
+                    width: 80%;
+                    height: 16%;
                 }
                 h4 {
-                    margin-top: 30%;
+                    margin-top: 27%;
                     font-size: 100%;
                     text-align: center;
                 }
@@ -421,12 +455,12 @@
                 width: 100%;
                 flex-direction: column;
                 .servidores_titulo {
-                    margin-top: 1%;
-                    padding-left: 10%;
+                    margin-top: 10%;
                     text-align: center;
                 }
                 .servidores_texto {
                     text-align: center;
+                    margin-top: 16%;
                 }
             }
         }
@@ -467,7 +501,6 @@
             margin-bottom: 10%;
         }
         .contenido_principal {
-            margin-bottom: 13.6%;
             .contenido_formulario {
                 margin-top: 5%;
                 margin-bottom: 13%;
@@ -513,10 +546,9 @@
     .body_header {
         width: 100%;
         .header_logo {
+            flex-basis: 30%;
             .logo {
                 width: 50%;
-                height: 80%;
-                margin-top: 1%;
             }
         }
         nav {
@@ -524,27 +556,63 @@
             margin-left: 10%;
             .nav {
                 flex-wrap: nowrap;
-                justify-content: end;
+                justify-content: space-evenly;
                 .nav-item {
                     a {
-                        font-size: 50%;
+                        font-size: 130%;
                         padding: 5%;
                     }
                 }
             }
         }
     }
+    .body_footer {
+        flex-basis: 5%;
+        background-color: black;
+        bottom: 0;
+        .footer_texto {
+            text-align: center;
+            color: white;
+            margin-bottom: 0.5%;
+            font-size: 150%;
+        }
+        .footer_redes {
+            flex-basis: 50%;
+            text-align: center;
+            margin-bottom: 0.5%;
+            a {
+                text-decoration: none;
+                color: #ae8cee;
+                font-size: 150%;
+            }
+        }
+    }
     .body-index {
         width: 100%;
         height: 100%;
-        .carousel-caption {
-            margin-bottom: 17% !important;
-            font-size: 150%;
-            background-color: white;
-            border-radius: 8%;
-            p {
-                font-size: 80%;
-                margin-top: 2%;
+        .carousel {
+            .carousel-item {
+                height: 500px;
+                img {
+                    position: absolute;
+                    object-fit: cover;
+                    left: 0;
+                    top: 0;
+                    min-height: 500px;
+                }
+                .btn {
+                    background-color: $celeste;
+                }
+                .carousel-caption {
+                    font-size: 150%;
+                    background-color: white;
+                    border-radius: 8%;
+                    margin-bottom: 15%;
+                    p {
+                        font-size: 80%;
+                        margin-top: 2%;
+                    }
+                }
             }
         }
         .body_yo {
@@ -553,7 +621,7 @@
                 margin-top: 10%;
             }
             .texto_yo {
-                font-size: 100%;
+                font-size: 130%;
                 width: 70%;
                 margin-left: 13%;
                 margin-top: 5%;
@@ -565,11 +633,9 @@
                 margin-left: 0;
                 width: 70%;
                 .uno_texto {
-                    font-size: 100%;
+                    font-size: 130%;
                 }
                 .uno_titulo {
-                    margin-left: 10%;
-                    padding-left: 3%;
                     font-size: 200%;
                     text-align: center;
                 }
@@ -581,11 +647,9 @@
             }
             .resumen_dos {
                 .dos_texto {
-                    font-size: 100%;
+                    font-size: 130%;
                 }
                 .dos_titulo {
-                    margin-left: 10%;
-                    padding-left: 3%;
                     font-size: 200%;
                     text-align: center;
                 }
@@ -596,13 +660,11 @@
                 }
             }
             .resumen_tres {
-                margin-right: 5%;
+                margin-right: 3%;
                 .tres_texto {
-                    font-size: 100%;
+                    font-size: 130%;
                 }
                 .tres_titulo {
-                    margin-left: 10%;
-                    padding-left: 3%;
                     font-size: 200%;
                     text-align: center;
                 }
@@ -622,13 +684,13 @@
         .body_about {
             .about_titulo {
                 text-align: center;
-                margin-top: 7%;
+                margin-top: 10%;
                 font-size: 300%;
             }
             .about_texto {
                 width: 80%;
                 margin-left: 10%;
-                font-size: 80%;
+                font-size: 130%;
             }
         }
         .body_trabajos {
@@ -643,18 +705,8 @@
         }
     }
     .body-portfolio {
-        .carousel-caption {
-            font-size: 150%;
-            p {
-                font-size: 100%;
-                margin-top: 2%;
-            }
-        }
         .body_titulo-portfolio {
-            flex-basis: 10%;
-            margin-top: 10%;
-            font-size: 300%;
-            text-align: center;
+            display: none;
         }
         .portfolio_trabajos {
             height: 100%;
@@ -662,21 +714,28 @@
             height: 100%;
             margin-bottom: 30%;
             .uno_imagen {
-                margin-left: 30%;
-                height: 80%;
+                margin-left: 10%;
                 margin-top: 15%;
-                width: 60%;
+                width: 80%;
+            }
+            .uno_titulo {
+                font-size: 150%;
             }
             .uno_texto {
-                margin-top: 35%;
+                margin-top: 18%;
                 margin-right: 5%;
                 text-align: center;
                 font-size: 150%;
             }
+            .trabajos_separador1 {
+                display: none;
+            }
+            .dos_titulo {
+                font-size: 150%;
+            }
             .dos_imagen {
-                height: 60%;
-                width: 90%;
-                margin-top: 25%;
+                width: 97%;
+                margin-top: 55%;
             }
             .dos_texto {
                 margin-top: 15%;
@@ -684,12 +743,16 @@
                 font-size: 150%;
                 text-align: center;
             }
+            .trabajos_separador2 {
+                display: none;
+            }
+            .tres_titulo {
+                font-size: 150%;
+            }
             .tres_imagen {
-                margin-left: 30%;
-                height: 80%;
+                margin-left: 10%;
                 margin-top: 15%;
-                width: 60%;
-                ;
+                width: 80%;
             }
             .tres_texto {
                 margin-top: 35%;
@@ -697,10 +760,15 @@
                 text-align: center;
                 font-size: 150%;
             }
+            .trabajos_separador3 {
+                display: none;
+            }
+            .cuatro_titulo {
+                font-size: 150%;
+            }
             .cuatro_imagen {
-                height: 60%;
-                width: 90%;
-                margin-top: 45%;
+                width: 97%;
+                margin-top: 65%;
             }
             .cuatro_texto {
                 margin-top: 35%;
@@ -713,14 +781,25 @@
     .body-about {
         width: 100%;
         height: 100%;
+        .body_carrusel-banner {
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .carousel-caption {
+                            margin-bottom: 15%;
+                        }
+                    }
+                }
+            }
+        }
         .body_logo {
-            margin-top: 22%;
+            margin-top: 10%;
             .logo_nombres {
                 .nombres_elit {
                     font-size: 150%;
                     margin-left: 0%;
                     text-align: center;
-                    margin-top: 170%;
+                    margin-top: 250%;
                 }
                 .nombres_mas {
                     margin-left: 40%;
@@ -758,7 +837,7 @@
             }
             .logo_explicacion {
                 .explicacion_texto {
-                    margin-top: 35%;
+                    margin-top: 65%;
                     font-size: 130%;
                     text-align: center;
                     margin-right: 5%;
@@ -778,12 +857,17 @@
             }
             .columnas_vision {
                 font-size: 80%;
+                margin-top: 15%;
                 .vision_texto {
                     text-align: center;
                     width: 100%;
                     padding-left: 20%;
                     padding-right: 20%;
                     font-size: 200%;
+                }
+                .vision_titulo {
+                    font-size: 350%;
+                    margin-left: 34%;
                 }
                 img {
                     margin-left: 28%
@@ -798,6 +882,10 @@
                     padding-right: 20%;
                     font-size: 200%;
                 }
+                .historia_titulo {
+                    font-size: 350%;
+                    margin-left: 28%;
+                }
                 img {
                     margin-left: 30%;
                 }
@@ -811,6 +899,10 @@
                     padding-right: 20%;
                     font-size: 200%;
                 }
+                .valores_titulo {
+                    font-size: 350%;
+                    margin-left: 19%;
+                }
                 img {
                     margin-left: 30%
                 }
@@ -821,7 +913,7 @@
         width: 100%;
         height: 100%;
         .body_design-titulo {
-            margin-left: 32%;
+            text-align: center;
             margin-top: 10%;
             font-size: 300%;
             text-shadow: 2px 2px #ae8cee;
@@ -832,15 +924,17 @@
             .design_imagen {
                 height: 100%;
                 width: 100%;
+                margin-left: 5%;
                 img {
-                    width: 100%;
+                    width: 86%;
+                    margin-left: 5%;
                 }
                 p {
                     text-align: center;
                     font-size: 150%;
                 }
                 h4 {
-                    margin-top: 20%;
+                    margin-top: 5%;
                     font-size: 200%;
                     text-align: center;
                 }
@@ -850,10 +944,11 @@
                 height: 100%;
                 width: 100%;
                 img {
-                    width: 100%;
+                    width: 90%;
+                    margin-left: 5%;
                 }
                 h4 {
-                    margin-top: 30%;
+                    margin-top: 10%;
                     font-size: 200%;
                     text-align: center;
                 }
@@ -865,11 +960,13 @@
             .design_redes {
                 height: 100%;
                 width: 100%;
+                margin-right: 5%;
                 img {
-                    width: 80%;
+                    width: 64%;
+                    margin-left: 15%;
                 }
                 h4 {
-                    margin-top: 10%;
+                    margin-top: 5%;
                     font-size: 200%;
                     text-align: center;
                 }
@@ -890,14 +987,12 @@
         margin-left: 2%;
         margin-top: 10%;
         .programacion_web {
-            margin-top: 5%;
             margin-left: 2%;
             height: 50%;
             width: 100%;
             flex-direction: column;
             .web_titulo {
                 margin-top: 5%;
-                padding-right: 10%;
                 text-align: center;
                 font-size: 200%;
             }
@@ -907,13 +1002,12 @@
             }
         }
         .programacion_seo {
-            margin-top: 5%;
             margin-left: 10%;
             height: 50%;
             width: 100%;
             flex-direction: column;
             .seo_titulo {
-                margin-top: 7%;
+                margin-top: 5%;
                 padding-left: 10%;
                 text-align: center;
                 font-size: 200%;
@@ -948,8 +1042,6 @@
             width: 100%;
             flex-direction: column;
             .servidores_titulo {
-                margin-top: 1%;
-                padding-left: 10%;
                 text-align: center;
                 font-size: 200%;
             }
@@ -993,7 +1085,7 @@
             width: 35%;
         }
         .contenido_principal {
-            margin-bottom: 16%;
+            margin-bottom: 5%;
             .contenido_formulario {
                 margin-top: 5%;
                 margin-bottom: 17%;
@@ -1119,8 +1211,7 @@
             img {
                 height: 40%;
                 width: 40%;
-                margin-left: 10%;
-                margin-bottom: 10%;
+                margin-bottom: 8%;
             }
             .resumen_uno {
                 margin-left: 15%;
@@ -1134,7 +1225,7 @@
                     padding-left: 3%;
                 }
                 img {
-                    padding-left: 10%;
+                    margin-left: 13%;
                 }
             }
             .resumen_dos {
@@ -1147,6 +1238,9 @@
                     margin-left: 15%;
                     font-size: 150%;
                 }
+                img {
+                    margin-left: 13%;
+                }
             }
             .resumen_tres {
                 .tres_texto {
@@ -1156,6 +1250,9 @@
                 .tres_titulo {
                     margin-left: 15%;
                     font-size: 150%;
+                }
+                img {
+                    margin-left: 13%;
                 }
             }
         }
@@ -1190,13 +1287,6 @@
     }
     .body-portfolio {
         background-image: url(../../media/1.png);
-        .carousel-caption {
-            font-size: 150%;
-            p {
-                font-size: 100%;
-                margin-top: 2%;
-            }
-        }
         .body_titulo-portfolio {
             display: none;
         }
@@ -1207,16 +1297,15 @@
             margin-bottom: 10%;
             .uno_imagen {
                 margin-left: 30%;
-                height: 80%;
-                margin-top: 15%;
-                width: 60%;
+                height: auto;
+                margin-top: 10%;
+                width: 45%;
             }
             .uno_texto {
                 margin-top: 35%;
                 margin-right: 5%;
                 text-align: center;
                 font-size: 150%;
-                background-color: white;
                 height: 30%;
                 .uno_titulo {
                     font-size: 200%;
@@ -1228,16 +1317,15 @@
                 text-align: center;
             }
             .dos_imagen {
-                height: 60%;
+                height: auto;
                 width: 90%;
                 margin-top: 25%;
             }
             .dos_texto {
-                margin-top: 30%;
+                margin-top: 40%;
                 margin-left: 5%;
                 font-size: 150%;
                 text-align: center;
-                background-color: white;
                 height: 30%;
                 .dos_titulo {
                     font-size: 200%;
@@ -1250,16 +1338,15 @@
             }
             .tres_imagen {
                 margin-left: 30%;
-                height: 80%;
+                height: auto;
                 margin-top: 15%;
-                width: 60%;
+                width: 45%;
             }
             .tres_texto {
-                margin-top: 35%;
+                margin-top: 43%;
                 margin-right: 5%;
                 text-align: center;
                 font-size: 150%;
-                background-color: white;
                 height: 30%;
                 .tres_titulo {
                     font-size: 200%;
@@ -1271,16 +1358,15 @@
                 text-align: center;
             }
             .cuatro_imagen {
-                height: 60%;
+                height: auto;
                 width: 90%;
-                margin-top: 45%;
+                margin-top: 25%;
             }
             .cuatro_texto {
-                margin-top: 55%;
+                margin-top: 35%;
                 margin-left: 5%;
                 font-size: 150%;
                 text-align: center;
-                background-color: white;
                 height: 30%;
                 .cuatro_titulo {
                     font-size: 200%;
@@ -1356,7 +1442,7 @@
             }
             .columnas_vision {
                 margin-left: 10%;
-                background-color: white;
+                // background-color: white;
                 .vision_titulo {
                     text-align: center;
                 }
@@ -1371,7 +1457,7 @@
                 }
             }
             .columnas_historia {
-                background-color: white;
+                // background-color: white;
                 margin-left: 2%;
                 .historia_titulo {
                     text-align: center;
@@ -1387,7 +1473,7 @@
                 }
             }
             .columnas_valores {
-                background-color: white;
+                // background-color: white;
                 margin-left: 2%;
                 .valores_titulo {
                     text-align: center;
@@ -1505,7 +1591,7 @@
             width: 100%;
             flex-direction: row-reverse;
             .seo_titulo {
-                margin-top: 7%;
+                margin-top: 5%;
                 padding-left: 10%;
                 text-align: center;
                 font-size: 200%;
@@ -1521,7 +1607,7 @@
             width: 100%;
             flex-direction: row;
             .responsive_titulo {
-                margin-top: 5%;
+                margin-top: 7%;
                 padding-right: 10%;
                 text-align: center;
                 font-size: 200%;
@@ -1593,8 +1679,7 @@
             .contenido_principal {
                 margin-bottom: 0;
                 .contenido_formulario {
-                    margin-left: 15%;
-                    width: 100%;
+                    margin-left: 23%;
                     margin-top: 0%;
                     margin-bottom: 10%;
                     .nombre {
@@ -1618,7 +1703,7 @@
                         margin-top: 0;
                     }
                     .enviar {
-                        margin-left: 20%;
+                        margin-left: 17%;
                         margin-top: 5%;
                     }
                     .limpiar {
@@ -1629,6 +1714,26 @@
                         color: #ffffff;
                     }
                 }
+            }
+        }
+    }
+    .body_error {
+        section {
+            display: flex;
+            flex-direction: column;
+            .error_img {
+                flex-basis: 30%;
+                width: 30%;
+                margin-left: 35%;
+                margin-top: 7%;
+            }
+            .error_titulo {
+                font-size: 200%;
+                flex-basis: 40%;
+            }
+            .error_subtitulo {
+                font-size: 150%;
+                flex-basis: 30%;
             }
         }
     }
