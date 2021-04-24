@@ -80,7 +80,7 @@
                 img {
                     width: 60%;
                     margin-left: 20%;
-                    margin-bottom: 5%;
+                    margin-bottom: 10%;
                 }
             }
             .resumen_dos {
@@ -106,9 +106,9 @@
                     text-align: center;
                 }
                 img {
-                    width: 80%;
+                    width: 90%;
                     margin-left: 10%;
-                    margin-bottom: 5%;
+                    margin-bottom: 10%;
                 }
             }
         }
@@ -455,137 +455,719 @@
                 width: 100%;
                 flex-direction: column;
                 .servidores_titulo {
-                    .servidores_texto {
-                        text-align: center;
-                        margin-top: 16%;
-                    }
-                }
-            }
-            .body_asesoramiento-titulo {
-                text-align: center;
-                margin-top: 20%;
-                text-shadow: 2px 2px #ae8cee;
-            }
-            .body_asesoramiento {
-                flex-direction: column;
-                .asesoramiento_imagen {
-                    height: 50%;
-                    width: 50%;
-                    margin-top: 10%;
-                    margin-bottom: 5%;
-                    margin-left: 22%;
-                }
-                .asesoramiento_texto {
+                    margin-top: 0%;
                     text-align: center;
-                    margin-right: 5%;
-                    margin-left: 5%;
+                }
+                .servidores_texto {
+                    text-align: center;
+                    margin-top: 5%;
                 }
             }
         }
-        .body-contacto {
-            width: 100%;
-            height: 100%;
-            .body_carrusel-banner {
-                display: none;
+        .body_asesoramiento-titulo {
+            text-align: center;
+            margin-top: 20%;
+            text-shadow: 2px 2px #ae8cee;
+        }
+        .body_asesoramiento {
+            flex-direction: column;
+            .asesoramiento_imagen {
+                height: 50%;
+                width: 50%;
+                margin-top: 10%;
+                margin-bottom: 5%;
+                margin-left: 22%;
             }
-            .contacto_contenido {
-                margin-top: 3%;
+            .asesoramiento_texto {
+                text-align: center;
+                margin-right: 5%;
+                margin-left: 5%;
             }
-            .contenido_imagen {
-                margin-left: 30%;
-                width: 45%;
-                margin-top: 15%;
-                margin-bottom: 10%;
-            }
-            .contenido_principal {
-                .contenido_formulario {
+        }
+    }
+    .body-contacto {
+        width: 100%;
+        height: 100%;
+        .body_carrusel-banner {
+            display: none;
+        }
+        .contacto_contenido {
+            margin-top: 3%;
+        }
+        .contenido_imagen {
+            margin-left: 30%;
+            width: 45%;
+            margin-top: 15%;
+            margin-bottom: 10%;
+        }
+        .contenido_principal {
+            .contenido_formulario {
+                margin-top: 5%;
+                margin-bottom: 13%;
+                width: 100%;
+                .nombre {
+                    width: 80%;
                     margin-top: 5%;
-                    margin-bottom: 13%;
-                    width: 100%;
-                    .nombre {
-                        width: 80%;
-                        margin-top: 5%;
-                        margin-left: 10%;
-                    }
-                    .apellido {
-                        width: 80%;
-                        margin-top: 10%;
-                        margin-left: 10%;
-                    }
-                    .email {
-                        width: 80%;
-                        margin-top: 10%;
-                        margin-left: 10%;
-                    }
-                    .mensaje {
-                        width: 80%;
-                        margin-top: 10%;
-                        margin-left: 10%;
-                    }
-                    .enviar {
-                        margin-left: 23.5%;
-                        margin-top: 10%;
-                    }
-                    .limpiar {
-                        margin-left: 22%;
-                        margin-top: 10%;
-                    }
-                    label {
-                        color: #ffffff;
+                    margin-left: 10%;
+                }
+                .apellido {
+                    width: 80%;
+                    margin-top: 10%;
+                    margin-left: 10%;
+                }
+                .email {
+                    width: 80%;
+                    margin-top: 10%;
+                    margin-left: 10%;
+                }
+                .mensaje {
+                    width: 80%;
+                    margin-top: 10%;
+                    margin-left: 10%;
+                }
+                .enviar {
+                    margin-left: 23.5%;
+                    margin-top: 10%;
+                }
+                .limpiar {
+                    margin-left: 22%;
+                    margin-top: 10%;
+                }
+                label {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    // media para index //
+    .body_header {
+        width: 100%;
+        .header_logo {
+            flex-basis: 30%;
+            .logo {
+                width: 50%;
+            }
+        }
+        nav {
+            flex-basis: 70%;
+            margin-left: 10%;
+            .nav {
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                .nav-item {
+                    a {
+                        font-size: 130%;
+                        padding: 5%;
                     }
                 }
             }
         }
     }
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        // media para index //
-        .body_header {
-            width: 100%;
-            .header_logo {
-                flex-basis: 30%;
-                .logo {
-                    width: 50%;
+    .body_footer {
+        flex-basis: 5%;
+        background-color: black;
+        bottom: 0;
+        .footer_texto {
+            text-align: center;
+            color: white;
+            margin-bottom: 0.5%;
+            font-size: 150%;
+        }
+        .footer_redes {
+            flex-basis: 50%;
+            text-align: center;
+            margin-bottom: 0.5%;
+            a {
+                text-decoration: none;
+                color: #ae8cee;
+                font-size: 150%;
+            }
+        }
+    }
+    .body-index {
+        width: 100%;
+        height: 100%;
+        .carousel {
+            .carousel-item {
+                height: 500px;
+                img {
+                    position: absolute;
+                    object-fit: cover;
+                    left: 0;
+                    top: 0;
+                    min-height: 500px;
+                }
+                .btn {
+                    background-color: $celeste;
+                }
+                .carousel-caption {
+                    font-size: 150%;
+                    background-color: white;
+                    border-radius: 8%;
+                    margin-bottom: 15%;
+                    p {
+                        font-size: 80%;
+                        margin-top: 2%;
+                    }
                 }
             }
-            nav {
-                flex-basis: 70%;
+        }
+        .body_yo {
+            .titulo_yo {
+                font-size: 350%;
+                margin-top: 10%;
+            }
+            .texto_yo {
+                font-size: 130%;
+                width: 70%;
+                margin-left: 13%;
+                margin-top: 5%;
+            }
+        }
+        .body_resumen {
+            justify-content: space-between;
+            .resumen_uno {
+                margin-left: 0;
+                width: 70%;
+                .uno_texto {
+                    font-size: 130%;
+                }
+                .uno_titulo {
+                    font-size: 200%;
+                    text-align: center;
+                }
+                img {
+                    height: 40%;
+                    width: 100%;
+                    margin-bottom: 5%;
+                }
+            }
+            .resumen_dos {
+                .dos_texto {
+                    font-size: 130%;
+                }
+                .dos_titulo {
+                    font-size: 200%;
+                    text-align: center;
+                }
+                img {
+                    height: 40%;
+                    width: 100%;
+                    margin-bottom: 5%;
+                }
+            }
+            .resumen_tres {
+                margin-right: 3%;
+                .tres_texto {
+                    font-size: 130%;
+                }
+                .tres_titulo {
+                    font-size: 200%;
+                    text-align: center;
+                }
+                img {
+                    height: 40%;
+                    width: 100%;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+        .body_botonServicios {
+            margin-top: 9%;
+            .boton {
+                margin-left: 42%;
+            }
+        }
+        .body_about {
+            .about_titulo {
+                text-align: center;
+                margin-top: 10%;
+                font-size: 300%;
+            }
+            .about_texto {
+                width: 80%;
                 margin-left: 10%;
-                .nav {
-                    flex-wrap: nowrap;
-                    justify-content: space-evenly;
-                    .nav-item {
-                        a {
-                            font-size: 130%;
-                            padding: 5%;
+                font-size: 130%;
+            }
+        }
+        .body_trabajos {
+            width: 97%;
+            margin-left: 0%;
+            margin-top: 7%;
+            margin-bottom: 10%;
+            img {
+                height: 150%;
+                width: 100%;
+            }
+        }
+    }
+    .body-portfolio {
+        .body_titulo-portfolio {
+            display: none;
+        }
+        .portfolio_trabajos {
+            height: 100%;
+            margin-top: 5%;
+            height: 100%;
+            margin-bottom: 30%;
+            .uno_imagen {
+                margin-left: 10%;
+                margin-top: 15%;
+                width: 80%;
+            }
+            .uno_titulo {
+                font-size: 150%;
+            }
+            .uno_texto {
+                margin-top: 18%;
+                margin-right: 5%;
+                text-align: center;
+                font-size: 150%;
+            }
+            .trabajos_separador1 {
+                display: none;
+            }
+            .dos_titulo {
+                font-size: 150%;
+            }
+            .dos_imagen {
+                width: 97%;
+                margin-top: 55%;
+            }
+            .dos_texto {
+                margin-top: 15%;
+                margin-left: 5%;
+                font-size: 150%;
+                text-align: center;
+            }
+            .trabajos_separador2 {
+                display: none;
+            }
+            .tres_titulo {
+                font-size: 150%;
+            }
+            .tres_imagen {
+                margin-left: 10%;
+                margin-top: 15%;
+                width: 80%;
+            }
+            .tres_texto {
+                margin-top: 35%;
+                margin-right: 5%;
+                text-align: center;
+                font-size: 150%;
+            }
+            .trabajos_separador3 {
+                display: none;
+            }
+            .cuatro_titulo {
+                font-size: 150%;
+            }
+            .cuatro_imagen {
+                width: 97%;
+                margin-top: 65%;
+            }
+            .cuatro_texto {
+                margin-top: 35%;
+                margin-left: 5%;
+                font-size: 150%;
+                text-align: center;
+            }
+        }
+    }
+    .body-about {
+        width: 100%;
+        height: 100%;
+        .body_carrusel-banner {
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .carousel-caption {
+                            margin-bottom: 15%;
                         }
                     }
                 }
             }
         }
-        .body_footer {
-            flex-basis: 5%;
-            background-color: black;
-            bottom: 0;
-            .footer_texto {
-                text-align: center;
-                color: white;
-                margin-bottom: 0.5%;
-                font-size: 150%;
+        .body_logo {
+            margin-top: 10%;
+            .logo_nombres {
+                .nombres_elit {
+                    font-size: 150%;
+                    margin-left: 0%;
+                    text-align: center;
+                    margin-top: 250%;
+                }
+                .nombres_mas {
+                    margin-left: 40%;
+                }
+                h4 {
+                    font-size: 150%;
+                    margin-top: 100%;
+                }
             }
-            .footer_redes {
-                flex-basis: 50%;
-                text-align: center;
-                margin-bottom: 0.5%;
-                a {
-                    text-decoration: none;
-                    color: #ae8cee;
+            .llave_alineacion {
+                margin-top: 1000%;
+                color: #ae8cee;
+                font-size: 400%;
+            }
+            .logo_marca {
+                margin-top: 5%;
+                .logo {
+                    height: 150%;
+                    width: 45%;
+                    margin-left: 30%;
+                    margin-top: 40%;
+                }
+                p {
+                    margin-top: 3%;
+                    font-size: 150%;
+                    text-align: center;
+                }
+                .marca_titulo {
+                    font-size: 300%;
+                    margin-top: 1%;
+                    margin-left: 5%;
+                    text-shadow: 2px 2px #ae8cee;
+                    text-align: center;
+                }
+            }
+            .logo_explicacion {
+                .explicacion_texto {
+                    margin-top: 65%;
+                    font-size: 130%;
+                    text-align: center;
+                    margin-right: 5%;
+                }
+            }
+        }
+        .body_columnas-about {
+            margin-top: 5%;
+            margin-bottom: 5%;
+            display: flex;
+            flex-direction: column;
+            img {
+                height: 40%;
+                width: 40%;
+                margin-bottom: 5%;
+                margin-top: 5%;
+            }
+            .columnas_vision {
+                font-size: 80%;
+                margin-top: 15%;
+                .vision_texto {
+                    text-align: center;
+                    width: 100%;
+                    padding-left: 20%;
+                    padding-right: 20%;
+                    font-size: 200%;
+                }
+                .vision_titulo {
+                    font-size: 350%;
+                    margin-left: 34%;
+                }
+                img {
+                    margin-left: 28%
+                }
+            }
+            .columnas_historia {
+                margin-top: 10%;
+                .historia_texto {
+                    text-align: center;
+                    width: 100%;
+                    padding-left: 20%;
+                    padding-right: 20%;
+                    font-size: 200%;
+                }
+                .historia_titulo {
+                    font-size: 350%;
+                    margin-left: 28%;
+                }
+                img {
+                    margin-left: 30%;
+                }
+            }
+            .columnas_valores {
+                margin-top: 10%;
+                .valores_texto {
+                    text-align: center;
+                    width: 100%;
+                    padding-left: 20%;
+                    padding-right: 20%;
+                    font-size: 200%;
+                }
+                .valores_titulo {
+                    font-size: 350%;
+                    margin-left: 19%;
+                }
+                img {
+                    margin-left: 30%
+                }
+            }
+        }
+    }
+    .body-servicios {
+        width: 100%;
+        height: 100%;
+        .body_design-titulo {
+            text-align: center;
+            margin-top: 10%;
+            font-size: 300%;
+            text-shadow: 2px 2px #ae8cee;
+        }
+        .body_design {
+            margin-top: 10%;
+            justify-items: center;
+            .design_imagen {
+                height: 100%;
+                width: 100%;
+                margin-left: 5%;
+                img {
+                    width: 86%;
+                    margin-left: 5%;
+                }
+                p {
+                    text-align: center;
+                    font-size: 150%;
+                }
+                h4 {
+                    margin-top: 5%;
+                    font-size: 200%;
+                    text-align: center;
+                }
+            }
+            .design_brand {
+                margin-left: 2%;
+                height: 100%;
+                width: 100%;
+                img {
+                    width: 90%;
+                    margin-left: 5%;
+                }
+                h4 {
+                    margin-top: 10%;
+                    font-size: 200%;
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                    font-size: 150%;
+                }
+            }
+            .design_redes {
+                height: 100%;
+                width: 100%;
+                margin-right: 5%;
+                img {
+                    width: 64%;
+                    margin-left: 15%;
+                }
+                h4 {
+                    margin-top: 5%;
+                    font-size: 200%;
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
                     font-size: 150%;
                 }
             }
         }
-        .body-index {
+    }
+    .body_programacion-titulo {
+        text-align: center;
+        margin-top: 15%;
+        text-shadow: 2px 2px #ae8cee;
+        font-size: 300%;
+    }
+    .body_programacion {
+        margin-left: 2%;
+        margin-top: 10%;
+        .programacion_web {
+            margin-left: 2%;
+            height: 50%;
             width: 100%;
-            height: 100%;
+            flex-direction: column;
+            .web_titulo {
+                margin-top: 5%;
+                text-align: center;
+                font-size: 200%;
+            }
+            .web_texto {
+                text-align: center;
+                font-size: 150%;
+            }
+        }
+        .programacion_seo {
+            margin-left: 10%;
+            height: 50%;
+            width: 100%;
+            flex-direction: column;
+            .seo_titulo {
+                margin-top: 5%;
+                padding-left: 10%;
+                text-align: center;
+                font-size: 200%;
+            }
+            .seo_texto {
+                text-align: center;
+                font-size: 150%;
+            }
+        }
+        .programacion_responsive {
+            margin-top: 5%;
+            margin-left: 2%;
+            height: 50%;
+            width: 100%;
+            flex-direction: column;
+            .responsive_titulo {
+                margin-top: 5%;
+                padding-right: 10%;
+                text-align: center;
+                font-size: 200%;
+            }
+            .responsive_texto {
+                margin-top: 5%;
+                text-align: center;
+                font-size: 150%;
+            }
+        }
+        .programacion_servidores {
+            margin-top: 10%;
+            margin-left: 10%;
+            height: 50%;
+            width: 100%;
+            flex-direction: column;
+            .servidores_titulo {
+                text-align: center;
+                font-size: 200%;
+            }
+            .servidores_texto {
+                text-align: center;
+                font-size: 150%;
+            }
+        }
+    }
+    .body_asesoramiento-titulo {
+        margin-left: 30%;
+        margin-top: 20%;
+        text-shadow: 2px 2px #ae8cee;
+        font-size: 300%;
+    }
+    .body_asesoramiento {
+        flex-direction: column;
+        margin-bottom: 5%;
+        .asesoramiento_imagen {
+            height: 50%;
+            width: 50%;
+            margin-top: 10%;
+            margin-bottom: 5%;
+            margin-left: 22%;
+        }
+        .asesoramiento_texto {
+            text-align: center;
+            margin-right: 5%;
+            margin-left: 5%;
+            font-size: 150%;
+        }
+    }
+    .body-contacto {
+        width: 100%;
+        height: 100%;
+        .contacto_contenido {
+            margin-top: 15%;
+        }
+        .contenido_imagen {
+            margin-left: 35%;
+            width: 35%;
+        }
+        .contenido_principal {
+            margin-bottom: 5%;
+            .contenido_formulario {
+                margin-top: 5%;
+                margin-bottom: 17%;
+                width: 100%;
+                .nombre {
+                    width: 80%;
+                    margin-top: 5%;
+                    margin-left: 10%;
+                }
+                .apellido {
+                    width: 80%;
+                    margin-top: 5%;
+                    margin-left: 10%;
+                }
+                .email {
+                    width: 80%;
+                    margin-top: 5%;
+                    margin-left: 10%;
+                }
+                .mensaje {
+                    width: 80%;
+                    margin-top: 5%;
+                    margin-left: 10%;
+                }
+                .enviar {
+                    margin-left: 22%;
+                    margin-top: 5%;
+                }
+                .limpiar {
+                    margin-left: 20%;
+                    margin-top: 5%;
+                }
+                label {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    //header//
+    .body_header {
+        width: 100%;
+        .header_logo {
+            .logo {
+                width: 10%;
+            }
+        }
+        .nav {
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+            a {
+                height: 99%;
+            }
+        }
+    }
+    .body_footer {
+        flex-basis: 5%;
+        background-color: black;
+        bottom: 0;
+        .footer_texto {
+            text-align: center;
+            color: white;
+            margin-bottom: 0.5%;
+        }
+        .footer_redes {
+            flex-basis: 50%;
+            text-align: center;
+            margin-bottom: 0.5%;
+            a {
+                text-decoration: none;
+                color: #ae8cee;
+            }
+        }
+    }
+    .body-index {
+        width: 100%;
+        height: 100%;
+        .body_carrusel {
+            flex-basis: 30%;
+            z-index: 1;
             .carousel {
                 .carousel-item {
                     height: 500px;
@@ -600,518 +1182,529 @@
                         background-color: $celeste;
                     }
                     .carousel-caption {
+                        margin-bottom: 7%;
                         font-size: 150%;
-                        background-color: white;
-                        border-radius: 8%;
-                        margin-bottom: 15%;
                         p {
-                            font-size: 80%;
                             margin-top: 2%;
                         }
                     }
                 }
             }
-            .body_yo {
-                .titulo_yo {
-                    font-size: 350%;
-                    margin-top: 10%;
-                }
-                .texto_yo {
-                    font-size: 130%;
-                    width: 70%;
-                    margin-left: 13%;
-                    margin-top: 5%;
-                }
+        }
+        .body_yo {
+            .titulo_yo {
+                font-size: 350%;
+                margin-top: 5%;
+                text-align: center;
             }
-            .body_resumen {
-                justify-content: space-between;
-                .resumen_uno {
-                    margin-left: 0;
-                    width: 70%;
-                    .uno_texto {
-                        font-size: 130%;
-                    }
-                    .uno_titulo {
-                        font-size: 200%;
-                        text-align: center;
-                    }
-                    img {
-                        height: 40%;
-                        width: 100%;
-                        margin-bottom: 5%;
-                    }
-                }
-                .resumen_dos {
-                    .dos_texto {
-                        font-size: 130%;
-                    }
-                    .dos_titulo {
-                        font-size: 200%;
-                        text-align: center;
-                    }
-                    img {
-                        height: 40%;
-                        width: 100%;
-                        margin-bottom: 5%;
-                    }
-                }
-                .resumen_tres {
-                    margin-right: 3%;
-                    .tres_texto {
-                        font-size: 130%;
-                    }
-                    .tres_titulo {
-                        font-size: 200%;
-                        text-align: center;
-                    }
-                    img {
-                        height: 40%;
-                        width: 100%;
-                        margin-bottom: 5%;
-                    }
-                }
-            }
-            .body_botonServicios {
-                margin-top: 9%;
-                .boton {
-                    margin-left: 42%;
-                }
-            }
-            .body_about {
-                .about_titulo {
-                    text-align: center;
-                    margin-top: 10%;
-                    font-size: 300%;
-                }
-                .about_texto {
-                    width: 80%;
-                    margin-left: 10%;
-                    font-size: 130%;
-                }
-            }
-            .body_trabajos {
-                width: 97%;
-                margin-left: 0%;
-                margin-top: 7%;
-                margin-bottom: 10%;
-                img {
-                    height: 150%;
-                    width: 100%;
-                }
+            .texto_yo {
+                font-size: 100%;
+                width: 50%;
+                margin-left: 25%;
+                text-align: center;
+                font-size: 120%;
             }
         }
-        .body-portfolio {
-            .body_titulo-portfolio {
-                display: none;
+        .body_resumen {
+            margin-left: 1.7%;
+            margin-top: 10%;
+            img {
+                height: 40%;
+                width: 40%;
+                margin-bottom: 8%;
             }
-            .portfolio_trabajos {
-                height: 100%;
-                margin-top: 5%;
-                height: 100%;
-                margin-bottom: 30%;
-                .uno_imagen {
-                    margin-left: 10%;
-                    margin-top: 15%;
-                    width: 80%;
+            .resumen_uno {
+                margin-left: 15%;
+                width: 70%;
+                .uno_texto {
+                    text-align: center;
+                    width: 70%;
                 }
                 .uno_titulo {
-                    font-size: 150%;
+                    margin-left: 10%;
+                    padding-left: 3%;
                 }
-                .uno_texto {
-                    margin-top: 18%;
-                    margin-right: 5%;
+                img {
+                    margin-left: 13%;
+                }
+            }
+            .resumen_dos {
+                margin-left: 0.5%;
+                .dos_texto {
                     text-align: center;
-                    font-size: 150%;
-                }
-                .trabajos_separador1 {
-                    display: none;
+                    width: 70%;
                 }
                 .dos_titulo {
+                    margin-left: 15%;
                     font-size: 150%;
                 }
-                .dos_imagen {
-                    width: 97%;
-                    margin-top: 55%;
+                img {
+                    margin-left: 13%;
                 }
-                .dos_texto {
-                    margin-top: 15%;
-                    margin-left: 5%;
-                    font-size: 150%;
+            }
+            .resumen_tres {
+                .tres_texto {
                     text-align: center;
-                }
-                .trabajos_separador2 {
-                    display: none;
+                    width: 70%;
                 }
                 .tres_titulo {
+                    margin-left: 15%;
                     font-size: 150%;
                 }
-                .tres_imagen {
-                    margin-left: 10%;
-                    margin-top: 15%;
-                    width: 80%;
-                }
-                .tres_texto {
-                    margin-top: 35%;
-                    margin-right: 5%;
-                    text-align: center;
-                    font-size: 150%;
-                }
-                .trabajos_separador3 {
-                    display: none;
-                }
-                .cuatro_titulo {
-                    font-size: 150%;
-                }
-                .cuatro_imagen {
-                    width: 97%;
-                    margin-top: 65%;
-                }
-                .cuatro_texto {
-                    margin-top: 35%;
-                    margin-left: 5%;
-                    font-size: 150%;
-                    text-align: center;
+                img {
+                    margin-left: 13%;
                 }
             }
         }
-        .body-about {
-            width: 100%;
+        .body_botonServicios {
+            .boton {
+                margin-left: 47%;
+            }
+        }
+        .body_about {
+            .about_titulo {
+                text-align: center;
+                margin-top: 7%;
+                text-shadow: rgb(174, 140, 238) 2px 2px;
+                font-size: 250%;
+            }
+            .about_texto {
+                width: 40%;
+                margin-left: 30%;
+                text-align: center;
+            }
+        }
+        .body_trabajos {
+            width: 97%;
+            margin-left: 0%;
+            margin-top: 7%;
+            margin-bottom: 10%;
+            img {
+                height: 150%;
+                width: 100%;
+            }
+        }
+    }
+    .body-portfolio {
+        background-image: url(../../media/1.png);
+        .body_titulo-portfolio {
+            display: none;
+        }
+        .portfolio_trabajos {
             height: 100%;
-            .body_carrusel-banner {
-                .carousel {
-                    .carousel-inner {
-                        .carousel-item {
-                            .carousel-caption {
-                                margin-bottom: 15%;
-                            }
-                        }
-                    }
-                }
-            }
-            .body_logo {
+            margin-top: 1%;
+            height: 100%;
+            margin-bottom: 10%;
+            .uno_imagen {
+                margin-left: 30%;
+                height: auto;
                 margin-top: 10%;
-                .logo_nombres {
-                    .nombres_elit {
-                        font-size: 150%;
-                        margin-left: 0%;
-                        text-align: center;
-                        margin-top: 250%;
-                    }
-                    .nombres_mas {
-                        margin-left: 40%;
-                    }
-                    h4 {
-                        font-size: 150%;
-                        margin-top: 100%;
-                    }
-                }
-                .llave_alineacion {
-                    margin-top: 1000%;
-                    color: #ae8cee;
-                    font-size: 400%;
-                }
-                .logo_marca {
-                    margin-top: 5%;
-                    .logo {
-                        height: 150%;
-                        width: 45%;
-                        margin-left: 30%;
-                        margin-top: 40%;
-                    }
-                    p {
-                        margin-top: 3%;
-                        font-size: 150%;
-                        text-align: center;
-                    }
-                    .marca_titulo {
-                        font-size: 300%;
-                        margin-top: 1%;
-                        margin-left: 5%;
-                        text-shadow: 2px 2px #ae8cee;
-                        text-align: center;
-                    }
-                }
-                .logo_explicacion {
-                    .explicacion_texto {
-                        margin-top: 65%;
-                        font-size: 130%;
-                        text-align: center;
-                        margin-right: 5%;
-                    }
+                width: 45%;
+            }
+            .uno_texto {
+                margin-top: 35%;
+                margin-right: 5%;
+                text-align: center;
+                font-size: 150%;
+                height: 30%;
+                .uno_titulo {
+                    font-size: 200%;
                 }
             }
-            .body_columnas-about {
+            .trabajos_separador1 {
+                color: #ae8cee;
+                margin-top: 7%;
+                text-align: center;
+            }
+            .dos_imagen {
+                height: auto;
+                width: 90%;
+                margin-top: 25%;
+            }
+            .dos_texto {
+                margin-top: 40%;
+                margin-left: 5%;
+                font-size: 150%;
+                text-align: center;
+                height: 30%;
+                .dos_titulo {
+                    font-size: 200%;
+                }
+            }
+            .trabajos_separador2 {
+                color: #ae8cee;
+                margin-top: 7%;
+                text-align: center;
+            }
+            .tres_imagen {
+                margin-left: 30%;
+                height: auto;
+                margin-top: 15%;
+                width: 45%;
+            }
+            .tres_texto {
+                margin-top: 43%;
+                margin-right: 5%;
+                text-align: center;
+                font-size: 150%;
+                height: 30%;
+                .tres_titulo {
+                    font-size: 200%;
+                }
+            }
+            .trabajos_separador3 {
+                color: #ae8cee;
+                margin-top: 7%;
+                text-align: center;
+            }
+            .cuatro_imagen {
+                height: auto;
+                width: 90%;
+                margin-top: 25%;
+            }
+            .cuatro_texto {
+                margin-top: 35%;
+                margin-left: 5%;
+                font-size: 150%;
+                text-align: center;
+                height: 30%;
+                .cuatro_titulo {
+                    font-size: 200%;
+                }
+            }
+        }
+    }
+    .body-about {
+        width: 100%;
+        height: 100%;
+        .body_logo {
+            .logo_nombres {
+                .nombres_elit {
+                    font-size: 250%;
+                    margin-left: 0%;
+                    text-align: center;
+                    margin-top: 80%;
+                }
+                .nombres_mas {
+                    margin-left: 40%;
+                }
+                h4 {
+                    font-size: 250%;
+                    margin-top: 5%;
+                }
+            }
+            .llave_alineacion {
+                margin-top: 600%;
+                font-size: 400%;
+                color: #ae8cee;
+            }
+            .logo_marca {
                 margin-top: 5%;
+                .logo {
+                    width: 30%;
+                    margin-left: 38%;
+                }
+                p {
+                    margin-top: 3%;
+                    font-size: 150%;
+                    text-align: center;
+                    margin-left: 10%;
+                }
+                .marca_titulo {
+                    font-size: 300%;
+                    margin-top: 1%;
+                    margin-left: 38%;
+                    text-shadow: 2px 2px #ae8cee;
+                }
+            }
+            .logo_explicacion {
+                .explicacion_texto {
+                    margin-top: 15%;
+                    font-size: 150%;
+                    text-align: center;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                }
+            }
+        }
+        .body_columnas-about {
+            margin-top: 5%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 1.7%;
+            margin-top: 15%;
+            margin-bottom: 5%;
+            img {
+                height: 40%;
+                width: 40%;
                 margin-bottom: 5%;
-                display: flex;
-                flex-direction: column;
+                margin-top: 5%;
+            }
+            .columnas_vision {
+                margin-left: 10%;
+                .vision_titulo {
+                    text-align: center;
+                }
+                .vision_texto {
+                    text-align: center;
+                    width: 100%;
+                    padding-left: 20%;
+                    padding-right: 20%;
+                }
+                img {
+                    margin-left: 28%
+                }
+            }
+            .columnas_historia {
+                margin-left: 2%;
+                .historia_titulo {
+                    text-align: center;
+                }
+                .historia_texto {
+                    text-align: center;
+                    width: 100%;
+                    padding-left: 20%;
+                    padding-right: 20%;
+                }
+                img {
+                    margin-left: 30%;
+                }
+            }
+            .columnas_valores {
+                margin-left: 2%;
+                .valores_titulo {
+                    text-align: center;
+                }
+                .valores_texto {
+                    text-align: center;
+                    width: 100%;
+                    padding-left: 20%;
+                    padding-right: 20%;
+                }
+                img {
+                    margin-left: 30%
+                }
+            }
+        }
+    }
+    .body-servicios {
+        width: 100%;
+        height: 100%;
+        .body_design-titulo {
+            margin-left: 43%;
+            margin-top: 3%;
+            text-shadow: 2px 2px #ae8cee;
+            font-size: 300%;
+        }
+        .body_design {
+            margin-top: 2%;
+            justify-items: center;
+            .design_imagen {
+                height: 100%;
+                width: 65%;
+                h4 {
+                    margin-top: 10px;
+                    margin-left: 24%;
+                    font-size: 150%;
+                }
                 img {
                     height: 40%;
                     width: 40%;
-                    margin-bottom: 5%;
-                    margin-top: 5%;
+                    margin-left: 27%;
                 }
-                .columnas_vision {
-                    font-size: 80%;
-                    margin-top: 15%;
-                    .vision_texto {
-                        text-align: center;
-                        width: 100%;
-                        padding-left: 20%;
-                        padding-right: 20%;
-                        font-size: 200%;
-                    }
-                    .vision_titulo {
-                        font-size: 350%;
-                        margin-left: 34%;
-                    }
-                    img {
-                        margin-left: 28%
-                    }
+                p {
+                    text-align: center;
+                    padding: 10px;
                 }
-                .columnas_historia {
-                    margin-top: 10%;
-                    .historia_texto {
-                        text-align: center;
-                        width: 100%;
-                        padding-left: 20%;
-                        padding-right: 20%;
-                        font-size: 200%;
-                    }
-                    .historia_titulo {
-                        font-size: 350%;
-                        margin-left: 28%;
-                    }
-                    img {
-                        margin-left: 30%;
-                    }
+            }
+            .design_brand {
+                margin-left: 2%;
+                height: 100%;
+                width: 65%;
+                h4 {
+                    margin-top: 10px;
+                    margin-left: 24%;
+                    font-size: 150%;
                 }
-                .columnas_valores {
-                    margin-top: 10%;
-                    .valores_texto {
-                        text-align: center;
-                        width: 100%;
-                        padding-left: 20%;
-                        padding-right: 20%;
-                        font-size: 200%;
-                    }
-                    .valores_titulo {
-                        font-size: 350%;
-                        margin-left: 19%;
-                    }
-                    img {
-                        margin-left: 30%
-                    }
+                img {
+                    height: 40%;
+                    width: 40%;
+                    margin-left: 27%;
+                }
+                p {
+                    text-align: center;
+                    padding: 10px;
+                }
+            }
+            .design_redes {
+                height: 100%;
+                width: 65%;
+                h4 {
+                    margin-top: 10px;
+                    margin-left: 30%;
+                    font-size: 150%;
+                }
+                img {
+                    height: 40%;
+                    width: 40%;
+                    margin-left: 27%;
+                }
+                p {
+                    text-align: center;
+                    padding: 10px;
                 }
             }
         }
-        .body-servicios {
-            width: 100%;
-            height: 100%;
-            .body_design-titulo {
-                text-align: center;
-                margin-top: 10%;
-                font-size: 300%;
-                text-shadow: 2px 2px #ae8cee;
-            }
-            .body_design {
-                margin-top: 10%;
-                justify-items: center;
-                .design_imagen {
-                    height: 100%;
-                    width: 100%;
-                    margin-left: 5%;
-                    img {
-                        width: 86%;
-                        margin-left: 5%;
-                    }
-                    p {
-                        text-align: center;
-                        font-size: 150%;
-                    }
-                    h4 {
-                        margin-top: 5%;
-                        font-size: 200%;
-                        text-align: center;
-                    }
-                }
-                .design_brand {
-                    margin-left: 2%;
-                    height: 100%;
-                    width: 100%;
-                    img {
-                        width: 90%;
-                        margin-left: 5%;
-                    }
-                    h4 {
-                        margin-top: 10%;
-                        font-size: 200%;
-                        text-align: center;
-                    }
-                    p {
-                        text-align: center;
-                        font-size: 150%;
-                    }
-                }
-                .design_redes {
-                    height: 100%;
-                    width: 100%;
-                    margin-right: 5%;
-                    img {
-                        width: 64%;
-                        margin-left: 15%;
-                    }
-                    h4 {
-                        margin-top: 5%;
-                        font-size: 200%;
-                        text-align: center;
-                    }
-                    p {
-                        text-align: center;
-                        font-size: 150%;
-                    }
-                }
-            }
-        }
-        .body_programacion-titulo {
-            text-align: center;
-            margin-top: 15%;
-            text-shadow: 2px 2px #ae8cee;
-            font-size: 300%;
-        }
-        .body_programacion {
+    }
+    .body_programacion-titulo {
+        margin-left: 38%;
+        margin-top: 10%;
+        text-shadow: 2px 2px #ae8cee;
+        font-size: 300%;
+    }
+    .body_programacion {
+        margin-left: 2%;
+        margin-top: 1%;
+        .programacion_web {
+            margin-top: 5%;
             margin-left: 2%;
-            margin-top: 10%;
-            .programacion_web {
-                margin-left: 2%;
-                height: 50%;
-                width: 100%;
-                flex-direction: column;
-                .web_titulo {
-                    margin-top: 5%;
-                    text-align: center;
-                    font-size: 200%;
-                }
-                .web_texto {
-                    text-align: center;
-                    font-size: 150%;
-                }
-            }
-            .programacion_seo {
-                margin-left: 10%;
-                height: 50%;
-                width: 100%;
-                flex-direction: column;
-                .seo_titulo {
-                    margin-top: 5%;
-                    padding-left: 10%;
-                    text-align: center;
-                    font-size: 200%;
-                }
-                .seo_texto {
-                    text-align: center;
-                    font-size: 150%;
-                }
-            }
-            .programacion_responsive {
-                margin-top: 5%;
-                margin-left: 2%;
-                height: 50%;
-                width: 100%;
-                flex-direction: column;
-                .responsive_titulo {
-                    margin-top: 5%;
-                    padding-right: 10%;
-                    text-align: center;
-                    font-size: 200%;
-                }
-                .responsive_texto {
-                    margin-top: 5%;
-                    text-align: center;
-                    font-size: 150%;
-                }
-            }
-            .programacion_servidores {
-                margin-top: 10%;
-                margin-left: 10%;
-                height: 50%;
-                width: 100%;
-                flex-direction: column;
-                .servidores_titulo {
-                    text-align: center;
-                    font-size: 200%;
-                }
-                .servidores_texto {
-                    text-align: center;
-                    font-size: 150%;
-                }
-            }
-        }
-        .body_asesoramiento-titulo {
-            margin-left: 30%;
-            margin-top: 20%;
-            text-shadow: 2px 2px #ae8cee;
-            font-size: 300%;
-        }
-        .body_asesoramiento {
-            flex-direction: column;
-            margin-bottom: 5%;
-            .asesoramiento_imagen {
-                height: 50%;
-                width: 50%;
-                margin-top: 10%;
-                margin-bottom: 5%;
-                margin-left: 22%;
-            }
-            .asesoramiento_texto {
-                text-align: center;
-                margin-right: 5%;
-                margin-left: 5%;
-                font-size: 150%;
-            }
-        }
-        .body-contacto {
+            height: 50%;
             width: 100%;
-            height: 100%;
-            .contacto_contenido {
-                margin-top: 15%;
+            flex-direction: row;
+            .web_titulo {
+                margin-top: 5%;
+                padding-right: 10%;
+                text-align: center;
+                font-size: 200%;
             }
+            .web_texto {
+                text-align: center;
+            }
+        }
+        .programacion_seo {
+            margin-top: 5%;
+            margin-left: 20%;
+            height: 50%;
+            width: 100%;
+            flex-direction: row-reverse;
+            .seo_titulo {
+                margin-top: 5%;
+                padding-left: 10%;
+                text-align: center;
+                font-size: 200%;
+            }
+            .seo_texto {
+                text-align: center;
+            }
+        }
+        .programacion_responsive {
+            margin-top: 5%;
+            margin-left: 2%;
+            height: 50%;
+            width: 100%;
+            flex-direction: row;
+            .responsive_titulo {
+                margin-top: 7%;
+                padding-right: 10%;
+                text-align: center;
+                font-size: 200%;
+            }
+            .responsive_texto {
+                margin-top: 5%;
+                text-align: center;
+            }
+        }
+        .programacion_servidores {
+            margin-top: 10%;
+            margin-left: 20%;
+            height: 50%;
+            width: 100%;
+            flex-direction: row-reverse;
+            .servidores_titulo {
+                margin-top: 1%;
+                padding-left: 10%;
+                text-align: center;
+                font-size: 200%;
+            }
+            .servidores_texto {
+                text-align: center;
+            }
+        }
+    }
+    .body_asesoramiento-titulo {
+        margin-left: 42%;
+        margin-top: 10%;
+        text-shadow: 2px 2px #ae8cee;
+        font-size: 300%;
+    }
+    .body_asesoramiento {
+        flex-direction: row;
+        margin-bottom: 5%;
+        .asesoramiento_imagen {
+            height: 50%;
+            width: 50%;
+            margin-top: 2%;
+            margin-bottom: 5%;
+            margin-left: 14%;
+            img {
+                width: 50%;
+            }
+        }
+        .asesoramiento_texto {
+            text-align: center;
+            margin-right: 10%;
+            margin-top: 10%;
+            margin-left: 0%;
+            font-size: 150%;
+        }
+    }
+    .body-contacto {
+        width: 100%;
+        height: 100%;
+        .contacto_contenido {
+            margin-top: 0;
             .contenido_imagen {
-                margin-left: 35%;
-                width: 35%;
+                margin-left: 42%;
+                height: 15%;
+                width: 15%;
+                img {
+                    width: 110%;
+                    margin-top: 10%;
+                    margin-bottom: 10%;
+                }
             }
             .contenido_principal {
-                margin-bottom: 5%;
+                margin-bottom: 0;
                 .contenido_formulario {
-                    margin-top: 5%;
-                    margin-bottom: 17%;
-                    width: 100%;
+                    margin-left: 23%;
+                    margin-top: 0%;
+                    margin-bottom: 10%;
                     .nombre {
-                        width: 80%;
-                        margin-top: 5%;
+                        width: 50%;
                         margin-left: 10%;
+                        margin-top: 0%;
                     }
                     .apellido {
-                        width: 80%;
-                        margin-top: 5%;
+                        width: 50%;
                         margin-left: 10%;
+                        margin-top: 0%;
                     }
                     .email {
-                        width: 80%;
-                        margin-top: 5%;
+                        width: 50%;
                         margin-left: 10%;
+                        margin-top: 0%;
                     }
                     .mensaje {
-                        width: 80%;
-                        margin-top: 5%;
+                        width: 50%;
                         margin-left: 10%;
+                        margin-top: 0;
                     }
                     .enviar {
-                        margin-left: 22%;
+                        margin-left: 17%;
                         margin-top: 5%;
                     }
                     .limpiar {
-                        margin-left: 20%;
+                        margin-left: 15%;
                         margin-top: 5%;
                     }
                     label {
@@ -1121,612 +1714,23 @@
             }
         }
     }
-    @media only screen and (min-width: 1024px) {
-        //header//
-        .body_header {
-            width: 100%;
-            .header_logo {
-                .logo {
-                    width: 10%;
-                }
-            }
-            .nav {
-                justify-content: flex-end;
-                flex-wrap: nowrap;
-                a {
-                    height: 99%;
-                }
-            }
-        }
-        .body_footer {
-            flex-basis: 5%;
-            background-color: black;
-            bottom: 0;
-            .footer_texto {
-                text-align: center;
-                color: white;
-                margin-bottom: 0.5%;
-            }
-            .footer_redes {
-                flex-basis: 50%;
-                text-align: center;
-                margin-bottom: 0.5%;
-                a {
-                    text-decoration: none;
-                    color: #ae8cee;
-                }
-            }
-        }
-        .body-index {
-            width: 100%;
-            height: 100%;
-            .body_carrusel {
+    .body_error {
+        section {
+            display: flex;
+            flex-direction: column;
+            .error_img {
                 flex-basis: 30%;
-                z-index: 1;
-                .carousel {
-                    .carousel-item {
-                        height: 500px;
-                        img {
-                            position: absolute;
-                            object-fit: cover;
-                            left: 0;
-                            top: 0;
-                            min-height: 500px;
-                        }
-                        .btn {
-                            background-color: $celeste;
-                        }
-                        .carousel-caption {
-                            margin-bottom: 7%;
-                            font-size: 150%;
-                            p {
-                                margin-top: 2%;
-                            }
-                        }
-                    }
-                }
-            }
-            .body_yo {
-                .titulo_yo {
-                    font-size: 350%;
-                    margin-top: 5%;
-                    text-align: center;
-                }
-                .texto_yo {
-                    font-size: 100%;
-                    width: 50%;
-                    margin-left: 25%;
-                    text-align: center;
-                    font-size: 120%;
-                }
-            }
-            .body_resumen {
-                margin-left: 1.7%;
-                margin-top: 10%;
-                img {
-                    height: 40%;
-                    width: 40%;
-                    margin-bottom: 8%;
-                }
-                .resumen_uno {
-                    margin-left: 15%;
-                    width: 70%;
-                    .uno_texto {
-                        text-align: center;
-                        width: 70%;
-                    }
-                    .uno_titulo {
-                        margin-left: 10%;
-                        padding-left: 3%;
-                    }
-                    img {
-                        margin-left: 13%;
-                    }
-                }
-                .resumen_dos {
-                    margin-left: 0.5%;
-                    .dos_texto {
-                        text-align: center;
-                        width: 70%;
-                    }
-                    .dos_titulo {
-                        margin-left: 15%;
-                        font-size: 150%;
-                    }
-                    img {
-                        margin-left: 13%;
-                    }
-                }
-                .resumen_tres {
-                    .tres_texto {
-                        text-align: center;
-                        width: 70%;
-                    }
-                    .tres_titulo {
-                        margin-left: 15%;
-                        font-size: 150%;
-                    }
-                    img {
-                        margin-left: 13%;
-                    }
-                }
-            }
-            .body_botonServicios {
-                .boton {
-                    margin-left: 47%;
-                }
-            }
-            .body_about {
-                .about_titulo {
-                    text-align: center;
-                    margin-top: 7%;
-                    text-shadow: rgb(174, 140, 238) 2px 2px;
-                    font-size: 250%;
-                }
-                .about_texto {
-                    width: 40%;
-                    margin-left: 30%;
-                    text-align: center;
-                }
-            }
-            .body_trabajos {
-                width: 97%;
-                margin-left: 0%;
+                width: 30%;
+                margin-left: 35%;
                 margin-top: 7%;
-                margin-bottom: 10%;
-                img {
-                    height: 150%;
-                    width: 100%;
-                }
             }
-        }
-        .body-portfolio {
-            background-image: url(../../media/1.png);
-            .body_titulo-portfolio {
-                display: none;
+            .error_titulo {
+                font-size: 200%;
+                flex-basis: 40%;
             }
-            .portfolio_trabajos {
-                height: 100%;
-                margin-top: 1%;
-                height: 100%;
-                margin-bottom: 10%;
-                .uno_imagen {
-                    margin-left: 30%;
-                    height: auto;
-                    margin-top: 10%;
-                    width: 45%;
-                }
-                .uno_texto {
-                    margin-top: 35%;
-                    margin-right: 5%;
-                    text-align: center;
-                    font-size: 150%;
-                    height: 30%;
-                    .uno_titulo {
-                        font-size: 200%;
-                    }
-                }
-                .trabajos_separador1 {
-                    color: #ae8cee;
-                    margin-top: 7%;
-                    text-align: center;
-                }
-                .dos_imagen {
-                    height: auto;
-                    width: 90%;
-                    margin-top: 25%;
-                }
-                .dos_texto {
-                    margin-top: 40%;
-                    margin-left: 5%;
-                    font-size: 150%;
-                    text-align: center;
-                    height: 30%;
-                    .dos_titulo {
-                        font-size: 200%;
-                    }
-                }
-                .trabajos_separador2 {
-                    color: #ae8cee;
-                    margin-top: 7%;
-                    text-align: center;
-                }
-                .tres_imagen {
-                    margin-left: 30%;
-                    height: auto;
-                    margin-top: 15%;
-                    width: 45%;
-                }
-                .tres_texto {
-                    margin-top: 43%;
-                    margin-right: 5%;
-                    text-align: center;
-                    font-size: 150%;
-                    height: 30%;
-                    .tres_titulo {
-                        font-size: 200%;
-                    }
-                }
-                .trabajos_separador3 {
-                    color: #ae8cee;
-                    margin-top: 7%;
-                    text-align: center;
-                }
-                .cuatro_imagen {
-                    height: auto;
-                    width: 90%;
-                    margin-top: 25%;
-                }
-                .cuatro_texto {
-                    margin-top: 35%;
-                    margin-left: 5%;
-                    font-size: 150%;
-                    text-align: center;
-                    height: 30%;
-                    .cuatro_titulo {
-                        font-size: 200%;
-                    }
-                }
-            }
-        }
-        .body-about {
-            width: 100%;
-            height: 100%;
-            .body_logo {
-                .logo_nombres {
-                    .nombres_elit {
-                        font-size: 250%;
-                        margin-left: 0%;
-                        text-align: center;
-                        margin-top: 80%;
-                    }
-                    .nombres_mas {
-                        margin-left: 40%;
-                    }
-                    h4 {
-                        font-size: 250%;
-                        margin-top: 5%;
-                    }
-                }
-                .llave_alineacion {
-                    margin-top: 600%;
-                    font-size: 400%;
-                    color: #ae8cee;
-                }
-                .logo_marca {
-                    margin-top: 5%;
-                    .logo {
-                        width: 30%;
-                        margin-left: 38%;
-                    }
-                    p {
-                        margin-top: 3%;
-                        font-size: 150%;
-                        text-align: center;
-                        margin-left: 10%;
-                    }
-                    .marca_titulo {
-                        font-size: 300%;
-                        margin-top: 1%;
-                        margin-left: 38%;
-                        text-shadow: 2px 2px #ae8cee;
-                    }
-                }
-                .logo_explicacion {
-                    .explicacion_texto {
-                        margin-top: 15%;
-                        font-size: 150%;
-                        text-align: center;
-                        margin-left: 10%;
-                        margin-right: 10%;
-                    }
-                }
-            }
-            .body_columnas-about {
-                margin-top: 5%;
-                display: flex;
-                flex-direction: row;
-                margin-left: 1.7%;
-                margin-top: 15%;
-                margin-bottom: 5%;
-                img {
-                    height: 40%;
-                    width: 40%;
-                    margin-bottom: 5%;
-                    margin-top: 5%;
-                }
-                .columnas_vision {
-                    margin-left: 10%;
-                    .vision_titulo {
-                        text-align: center;
-                    }
-                    .vision_texto {
-                        text-align: center;
-                        width: 100%;
-                        padding-left: 20%;
-                        padding-right: 20%;
-                    }
-                    img {
-                        margin-left: 28%
-                    }
-                }
-                .columnas_historia {
-                    margin-left: 2%;
-                    .historia_titulo {
-                        text-align: center;
-                    }
-                    .historia_texto {
-                        text-align: center;
-                        width: 100%;
-                        padding-left: 20%;
-                        padding-right: 20%;
-                    }
-                    img {
-                        margin-left: 30%;
-                    }
-                }
-                .columnas_valores {
-                    margin-left: 2%;
-                    .valores_titulo {
-                        text-align: center;
-                    }
-                    .valores_texto {
-                        text-align: center;
-                        width: 100%;
-                        padding-left: 20%;
-                        padding-right: 20%;
-                    }
-                    img {
-                        margin-left: 30%
-                    }
-                }
-            }
-        }
-        .body-servicios {
-            width: 100%;
-            height: 100%;
-            .body_design-titulo {
-                margin-left: 43%;
-                margin-top: 3%;
-                text-shadow: 2px 2px #ae8cee;
-                font-size: 300%;
-            }
-            .body_design {
-                margin-top: 2%;
-                justify-items: center;
-                .design_imagen {
-                    height: 100%;
-                    width: 65%;
-                    h4 {
-                        margin-top: 10px;
-                        margin-left: 24%;
-                        font-size: 150%;
-                    }
-                    img {
-                        height: 40%;
-                        width: 40%;
-                        margin-left: 27%;
-                    }
-                    p {
-                        text-align: center;
-                        padding: 10px;
-                    }
-                }
-                .design_brand {
-                    margin-left: 2%;
-                    height: 100%;
-                    width: 65%;
-                    h4 {
-                        margin-top: 10px;
-                        margin-left: 24%;
-                        font-size: 150%;
-                    }
-                    img {
-                        height: 40%;
-                        width: 40%;
-                        margin-left: 27%;
-                    }
-                    p {
-                        text-align: center;
-                        padding: 10px;
-                    }
-                }
-                .design_redes {
-                    height: 100%;
-                    width: 65%;
-                    h4 {
-                        margin-top: 10px;
-                        margin-left: 30%;
-                        font-size: 150%;
-                    }
-                    img {
-                        height: 40%;
-                        width: 40%;
-                        margin-left: 27%;
-                    }
-                    p {
-                        text-align: center;
-                        padding: 10px;
-                    }
-                }
-            }
-        }
-        .body_programacion-titulo {
-            margin-left: 38%;
-            margin-top: 10%;
-            text-shadow: 2px 2px #ae8cee;
-            font-size: 300%;
-        }
-        .body_programacion {
-            margin-left: 2%;
-            margin-top: 1%;
-            .programacion_web {
-                margin-top: 5%;
-                margin-left: 2%;
-                height: 50%;
-                width: 100%;
-                flex-direction: row;
-                .web_titulo {
-                    margin-top: 5%;
-                    padding-right: 10%;
-                    text-align: center;
-                    font-size: 200%;
-                }
-                .web_texto {
-                    text-align: center;
-                }
-            }
-            .programacion_seo {
-                margin-top: 5%;
-                margin-left: 20%;
-                height: 50%;
-                width: 100%;
-                flex-direction: row-reverse;
-                .seo_titulo {
-                    margin-top: 5%;
-                    padding-left: 10%;
-                    text-align: center;
-                    font-size: 200%;
-                }
-                .seo_texto {
-                    text-align: center;
-                }
-            }
-            .programacion_responsive {
-                margin-top: 5%;
-                margin-left: 2%;
-                height: 50%;
-                width: 100%;
-                flex-direction: row;
-                .responsive_titulo {
-                    margin-top: 7%;
-                    padding-right: 10%;
-                    text-align: center;
-                    font-size: 200%;
-                }
-                .responsive_texto {
-                    margin-top: 5%;
-                    text-align: center;
-                }
-            }
-            .programacion_servidores {
-                margin-top: 10%;
-                margin-left: 20%;
-                height: 50%;
-                width: 100%;
-                flex-direction: row-reverse;
-                .servidores_titulo {
-                    margin-top: 1%;
-                    padding-left: 10%;
-                    text-align: center;
-                    font-size: 200%;
-                }
-                .servidores_texto {
-                    text-align: center;
-                }
-            }
-        }
-        .body_asesoramiento-titulo {
-            margin-left: 42%;
-            margin-top: 10%;
-            text-shadow: 2px 2px #ae8cee;
-            font-size: 300%;
-        }
-        .body_asesoramiento {
-            flex-direction: row;
-            margin-bottom: 5%;
-            .asesoramiento_imagen {
-                height: 50%;
-                width: 50%;
-                margin-top: 2%;
-                margin-bottom: 5%;
-                margin-left: 14%;
-                img {
-                    width: 50%;
-                }
-            }
-            .asesoramiento_texto {
-                text-align: center;
-                margin-right: 10%;
-                margin-top: 10%;
-                margin-left: 0%;
+            .error_subtitulo {
                 font-size: 150%;
-            }
-        }
-        .body-contacto {
-            width: 100%;
-            height: 100%;
-            .contacto_contenido {
-                margin-top: 0;
-                .contenido_imagen {
-                    margin-left: 42%;
-                    height: 15%;
-                    width: 15%;
-                    img {
-                        width: 110%;
-                        margin-top: 10%;
-                        margin-bottom: 10%;
-                    }
-                }
-                .contenido_principal {
-                    margin-bottom: 0;
-                    .contenido_formulario {
-                        margin-left: 23%;
-                        margin-top: 0%;
-                        margin-bottom: 10%;
-                        .nombre {
-                            width: 50%;
-                            margin-left: 10%;
-                            margin-top: 0%;
-                        }
-                        .apellido {
-                            width: 50%;
-                            margin-left: 10%;
-                            margin-top: 0%;
-                        }
-                        .email {
-                            width: 50%;
-                            margin-left: 10%;
-                            margin-top: 0%;
-                        }
-                        .mensaje {
-                            width: 50%;
-                            margin-left: 10%;
-                            margin-top: 0;
-                        }
-                        .enviar {
-                            margin-left: 17%;
-                            margin-top: 5%;
-                        }
-                        .limpiar {
-                            margin-left: 15%;
-                            margin-top: 5%;
-                        }
-                        label {
-                            color: #ffffff;
-                        }
-                    }
-                }
-            }
-        }
-        .body_error {
-            section {
-                display: flex;
-                flex-direction: column;
-                .error_img {
-                    flex-basis: 30%;
-                    width: 30%;
-                    margin-left: 35%;
-                    margin-top: 7%;
-                }
-                .error_titulo {
-                    font-size: 200%;
-                    flex-basis: 40%;
-                }
-                .error_subtitulo {
-                    font-size: 150%;
-                    flex-basis: 30%;
-                }
+                flex-basis: 30%;
             }
         }
     }

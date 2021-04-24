@@ -1194,7 +1194,7 @@ a {
   .body-index .body_resumen .resumen_uno img {
     width: 60%;
     margin-left: 20%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
   .body-index .body_resumen .resumen_dos .dos_texto {
     font-size: 80%;
@@ -1216,9 +1216,9 @@ a {
     text-align: center;
   }
   .body-index .body_resumen .resumen_tres img {
-    width: 80%;
+    width: 90%;
     margin-left: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
   .body-index .body_botonServicios {
     -ms-flex-preferred-size: 20%;
@@ -1575,88 +1575,92 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .body-servicios .body_programacion .programacion_servidores .servidores_titulo .servidores_texto {
+  .body-servicios .body_programacion .programacion_servidores .servidores_titulo {
+    margin-top: 0%;
     text-align: center;
-    margin-top: 16%;
   }
-  .body-servicios .body_programacion .body_asesoramiento-titulo {
+  .body-servicios .body_programacion .programacion_servidores .servidores_texto {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .body-servicios .body_asesoramiento-titulo {
     text-align: center;
     margin-top: 20%;
     text-shadow: 2px 2px #ae8cee;
   }
-  .body-servicios .body_programacion .body_asesoramiento {
+  .body-servicios .body_asesoramiento {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .body-servicios .body_programacion .body_asesoramiento .asesoramiento_imagen {
+  .body-servicios .body_asesoramiento .asesoramiento_imagen {
     height: 50%;
     width: 50%;
     margin-top: 10%;
     margin-bottom: 5%;
     margin-left: 22%;
   }
-  .body-servicios .body_programacion .body_asesoramiento .asesoramiento_texto {
+  .body-servicios .body_asesoramiento .asesoramiento_texto {
     text-align: center;
     margin-right: 5%;
     margin-left: 5%;
   }
-  .body-servicios .body-contacto {
+  .body-contacto {
     width: 100%;
     height: 100%;
   }
-  .body-servicios .body-contacto .body_carrusel-banner {
+  .body-contacto .body_carrusel-banner {
     display: none;
   }
-  .body-servicios .body-contacto .contacto_contenido {
+  .body-contacto .contacto_contenido {
     margin-top: 3%;
   }
-  .body-servicios .body-contacto .contenido_imagen {
+  .body-contacto .contenido_imagen {
     margin-left: 30%;
     width: 45%;
     margin-top: 15%;
     margin-bottom: 10%;
   }
-  .body-servicios .body-contacto .contenido_principal .contenido_formulario {
+  .body-contacto .contenido_principal .contenido_formulario {
     margin-top: 5%;
     margin-bottom: 13%;
     width: 100%;
   }
-  .body-servicios .body-contacto .contenido_principal .contenido_formulario .nombre {
+  .body-contacto .contenido_principal .contenido_formulario .nombre {
     width: 80%;
     margin-top: 5%;
     margin-left: 10%;
   }
-  .body-servicios .body-contacto .contenido_principal .contenido_formulario .apellido {
+  .body-contacto .contenido_principal .contenido_formulario .apellido {
     width: 80%;
     margin-top: 10%;
     margin-left: 10%;
   }
-  .body-servicios .body-contacto .contenido_principal .contenido_formulario .email {
+  .body-contacto .contenido_principal .contenido_formulario .email {
     width: 80%;
     margin-top: 10%;
     margin-left: 10%;
   }
-  .body-servicios .body-contacto .contenido_principal .contenido_formulario .mensaje {
+  .body-contacto .contenido_principal .contenido_formulario .mensaje {
     width: 80%;
     margin-top: 10%;
     margin-left: 10%;
   }
-  .body-servicios .body-contacto .contenido_principal .contenido_formulario .enviar {
+  .body-contacto .contenido_principal .contenido_formulario .enviar {
     margin-left: 23.5%;
     margin-top: 10%;
   }
-  .body-servicios .body-contacto .contenido_principal .contenido_formulario .limpiar {
+  .body-contacto .contenido_principal .contenido_formulario .limpiar {
     margin-left: 22%;
     margin-top: 10%;
   }
-  .body-servicios .body-contacto .contenido_principal .contenido_formulario label {
+  .body-contacto .contenido_principal .contenido_formulario label {
     color: #ffffff;
   }
 }
 
-@media only screen and (max-width: 700px) and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .body_header {
     width: 100%;
   }
@@ -2246,7 +2250,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 700px) and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .body_header {
     width: 100%;
   }
