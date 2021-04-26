@@ -1246,7 +1246,7 @@ a {
     margin-bottom: 10%;
   }
   .body-index .body_trabajos img {
-    height: 100%;
+    height: auto;
     width: 100%;
   }
   .body-portfolio .body_carrusel-banner {
@@ -1819,7 +1819,7 @@ a {
     margin-bottom: 10%;
   }
   .body-index .body_trabajos img {
-    height: 150%;
+    height: auto;
     width: 100%;
   }
   .body-portfolio .body_titulo-portfolio {
@@ -2400,7 +2400,7 @@ a {
     margin-bottom: 10%;
   }
   .body-index .body_trabajos img {
-    height: 150%;
+    height: auto;
     width: 100%;
   }
   .body-portfolio {
