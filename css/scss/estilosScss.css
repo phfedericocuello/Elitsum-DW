@@ -2614,7 +2614,7 @@ a {
     height: 100%;
   }
   .body-servicios .body_design-titulo {
-    margin-left: 43%;
+    text-align: center;
     margin-top: 3%;
     text-shadow: 2px 2px #ae8cee;
     font-size: 300%;
@@ -2679,7 +2679,7 @@ a {
     padding: 10px;
   }
   .body_programacion-titulo {
-    margin-left: 38%;
+    text-align: center;
     margin-top: 10%;
     text-shadow: 2px 2px #ae8cee;
     font-size: 300%;
@@ -2766,7 +2766,7 @@ a {
     text-align: center;
   }
   .body_asesoramiento-titulo {
-    margin-left: 42%;
+    text-align: center;
     margin-top: 10%;
     text-shadow: 2px 2px #ae8cee;
     font-size: 300%;
