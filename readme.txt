@@ -17,5 +17,7 @@ paginas y que pueda conocernos hasta contactarnos directamente
 - Contacto : Un formulario presentado de forma comoda para que el cliente rapidamente se pueda poner en contacto con la empresa.
 
 
-Proyecto creado para la entrega final del curso de desarrollo web de Coderhouse
+Este sitio se encuentra adaptado con responsive par 3 resoluciones diferentes, en 320, en 768 y la mayor a partir de 1024 pero en resoluciones como 1440 o 2560 es donde alcanza su mayor potencial.
+
+Proyecto creado para la entrega final del curso de desarrollo web de Coderhouse.
 
